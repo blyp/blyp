@@ -53,6 +53,17 @@ module.exports = function( grunt ) {
                     }
                 ]
             },
+            material : {
+                files : [
+                    {
+                        expand  : true,
+                        flatten : false,
+                        dest    : '<%= pkg.environment %>/assets/core/material/',
+                        cwd     : 'src/core/material-design-icons/iconfont/',
+                        src     : [ '**/*' ]
+                    }
+                ]
+            },
             bootstrap : {
                 files : [
                     {

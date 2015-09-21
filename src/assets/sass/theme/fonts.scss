@@ -1,0 +1,17 @@
+$font-size : 12px;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../core/material/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+  local('MaterialIcons-Regular'),
+  url(../core/material/MaterialIcons-Regular.woff2) format('woff2'),
+  url(../core/material/MaterialIcons-Regular.woff) format('woff'),
+  url(../core/material/MaterialIcons-Regular.ttf) format('truetype');
+}
