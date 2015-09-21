@@ -64,6 +64,28 @@ module.exports = function( grunt ) {
                     }
                 ]
             },
+            monosocial : {
+                files : [
+                    {
+                        expand  : true,
+                        flatten : false,
+                        dest    : '<%= pkg.environment %>/assets/core/monosocial/',
+                        cwd     : 'src/core/monosocial/',
+                        src     : [ '**/*' ]
+                    }
+                ]
+            },
+            paymentfont : {
+                files : [
+                    {
+                        expand  : true,
+                        flatten : false,
+                        dest    : '<%= pkg.environment %>/assets/core/payment-webfont/',
+                        cwd     : 'src/core/payment-webfont/fonts/',
+                        src     : [ '**/*' ]
+                    }
+                ]
+            },
             bootstrap : {
                 files : [
                     {
