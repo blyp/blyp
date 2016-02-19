@@ -1,14 +1,31 @@
 $white : #FFFFFF;
 $black : #000000;
 
+$light-dark : #929292;
 $light-med : #E9E9E9;
 $light : #F4F4F4;
 
 $dark-med : #181818;
-$dark : #404040;
+$dark : #373737;
 
 $gold : #FEBD00;
 $red : #FE1C1A;
 $purple : #A229F8;
 $green : #36C31F;
 $blue : #0B97FE;
+
+// Social Icons Colors
+.symbol {
+
+  &.blue {
+    color: #0d6eac;
+  }
+
+  &.cyan {
+    color: #15b4c9;
+  }
+
+  &.red {
+    color: #d41c1c;
+  }
+}

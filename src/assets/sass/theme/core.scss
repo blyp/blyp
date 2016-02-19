@@ -3,11 +3,11 @@
 @import "compass/css3";
 @import "compass/css3/opacity";
 @import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
 @import "compass/css3/background-size";
 @import "compass/typography/vertical_rhythm";
 
 // Import theme configs
-@import "theme/colors";
 @import "theme/fonts";
 @import "theme/forms";
 @import "theme/icons";
@@ -17,3 +17,40 @@ $screen-xs : 480px;
 $screen-sm : 768px;
 $screen-md : 992px;
 $screen-lg : 1200px;
+
+// Theme Core
+body {
+  background: $white;
+  color: $dark-med;
+}
+
+a {
+  color: $dark-med;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active {
+    color: $dark-med;
+    text-decoration: none;
+  }
+
+  &.button {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+    padding: 10px 15px;
+    @include border-radius(4px);
+
+    &.gold {
+      background: $gold;
+      color: $dark-med;
+    }
+  }
+}
+
+// Extended Core
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: -16px;
+  margin-left: -16px;
+}

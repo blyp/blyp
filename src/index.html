@@ -13,7 +13,7 @@
     <meta content="" name="keywords" >
     <meta content="@leonardomoreira" name="author" />
 
-    <title>Blyp / Encontra e promova o melhor.</title>
+    <title>Blyp / Encontre e promova o melhor.</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
@@ -21,6 +21,8 @@
 
     <link rel="stylesheet" href="assets/core/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/core/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/vendor/owl-carousel/owl.theme.css">
 
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -39,12 +41,27 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <header-view> </header-view>
+    <!-- /header -->
+
+    <div class="container-wrapper">
+        <div ng-view> </div>
+    </div>
+    <!-- /container -->
+
+    <footer-view> </footer-view>
+    <!-- /footer -->
+
+    <!--
     <div class="container-wrapper">
         <i class="material-icons md-48">face</i>
         <i class="symbol md-48">circleamazon</i>
         <i class="pw pw-paypal-new md-48"></i>
     </div>
-    <!-- /container -->
+    -->
+
+    <script src="assets/core/jquery.min.js"></script>
+    <!-- /jquery before, to use jqLite -->
 
     <script src="assets/core/angular.min.js"></script>
     <script src="assets/core/angular-route.min.js"></script>
@@ -52,10 +69,10 @@
     <script src="assets/core/angular-sanitize.min.js"></script>
     <!-- /core js -->
 
-    <script src="assets/core/jquery.min.js"></script>
     <script src="assets/core/ui-bootstrap.min.js"></script>
     <script src="assets/core/ui-bootstrap-tpls.min.js"></script>
     <script src="assets/core/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
     <!-- /vendor js -->
 
     <script src="assets/app/main.js"></script>

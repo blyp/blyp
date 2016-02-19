@@ -16,8 +16,6 @@
     "url": "https://github.com/blyp/blyp/issues"
   },
   "dependencies": {
-    "bower": "^1.3.12",
-    "grunt": "^0.4.5",
     "grunt-bower-task": "^0.4.0",
     "grunt-bump": "0.0.16",
     "grunt-cache-bust": "^0.4.5",
@@ -33,5 +31,9 @@
     "jshint-stylish": "^1.0.0"
   },
   "environment": "test",
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5"
+  }
 }

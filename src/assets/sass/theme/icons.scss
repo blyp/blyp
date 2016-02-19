@@ -1,3 +1,6 @@
+// Import theme configs
+@import "theme/colors";
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -160,11 +163,14 @@ a.symbol:before {
   content: "\e600";
 }
 
-.light { color: white; }
-.dark { color: white; }
-.inactive { color: white; }
+.light { color: $light; }
+.dark { color: $dark-med; }
+.inactive { color: $dark; }
+.action { cursor: pointer; }
 
-.md-18 { font-size: 18px; }
+.md-16 { font-size: 16px; }
 .md-24 { font-size: 24px; }
 .md-36 { font-size: 36px; }
 .md-48 { font-size: 48px; }
+.md-57 { font-size: 57px; }
+.md-62 { font-size: 62px; }
