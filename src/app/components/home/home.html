@@ -1,0 +1,126 @@
+<div id="home" page="home">
+
+  <div class="featured-seach">
+      <div class="container">
+
+          <header>
+              <h1>Blyp</h1>
+          </header>
+
+          <div class="welcome">
+              <h2>Boa tarde, Curitiba!</h2>
+          </div>
+
+          <form class="search" role="search">
+              <p>Encontre: <b>locais</b>, <b>empresas</b> e <b>profissionais</b></p>
+
+              <ul>
+                  <li><input type="text" class="form-control type" placeholder="shopping, pub" ng-keyup="search.init()" ng-model="search.fields.type"></li>
+                  <li><input type="text" class="form-control place" placeholder="Curitiba, PR" disabled> <button type="submit" class="btn" ng-click="search.init()"><i class="material-icons md-24">search</i></button></li>
+              </ul>
+          </form>
+
+          <div class="results">
+              <header>
+                  <h2>Resultados da Busca:</h2>
+              </header>
+
+              <ul>
+                <li><i class="material-icons md-16">local_grocery_store</i> <a href="/"><b>Shopping de Curitiba</b> em <b>Centro, Curitiba/PR</b></a></li>
+                <li><i class="material-icons md-16">local_grocery_store</i> <a href="/"><b>Shopping de Curitiba</b> em <b>Centro, Curitiba/PR</b></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <!-- /featured-seach -->
+
+  <div class="featured-types">
+      <div class="container">
+
+        <header>
+            <h2>Mais Buscados:</h2>
+        </header>
+
+        <ul>
+            <li><a href="/"><i class="material-icons">restaurant_menu</i> <b>Restaurantes</b></a></li>
+            <li><a href="/"><i class="material-icons">local_bar</i> <b>Bares</b></a></li>
+            <li><a href="/"><i class="material-icons">local_grocery_store</i> <b>Shoppings</b></a></li>
+            <li><a href="/"><i class="material-icons">local_hospital</i> <b>Clínicas</b></a></li>
+            <li><a href="/"><i class="material-icons">hotel</i> <b>Hotéis</b></a></li>
+            <li><a href="/"><i class="material-icons">store_mall_directory</i> <b>Comercial</b></a></li>
+            <li><a href="/"><i class="material-icons">attach_money</i> <b>Bancos</b></a></li>
+            <li><a href="/"><i class="material-icons">local_pizza</i> <b>Pizzaria</b></a></li>
+        </ul>
+      </div>
+  </div>
+  <!-- /featured-types -->
+
+  <div class="last-articles">
+      <div class="container">
+
+          <header class="row text-center">
+              <h2>Artigos & Entrevistas</h2>
+          </header>
+
+          <div class="owl-carousel owl-theme">
+              <div id="owl-articles">
+                  <div class="item" ng-repeat="article in articles">
+                      <figure class="text-center">
+                          <img src="{{article.author.image}}" alt="{{article.author.name}}">
+                      </figure>
+
+                      <div class="text">
+                          <header>
+                            <h3>{{article.title}}</h3>
+                            <h4>escrito por {{article.author.name}}</h4>
+                          </header>
+
+                          <p>{{article.description}}</p>
+                      </div>
+
+                      <a class="button gold" href="{{article.url}}">Ler Mais</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <!-- /last-articles -->
+
+  <div class="most-viewed">
+      <div class="container">
+
+          <header class="row text-center">
+              <h2>Empresas mais acessadas nesse momento:</h2>
+          </header>
+
+          <div class="owl-carousel owl-theme">
+              <div id="owl-viewned">
+                  <div class="item" ng-repeat="viewned in viewned">
+                      <header>
+                          <h3 class="text-center">{{viewned.place}}</h3>
+                      </header>
+
+                      <figure class="text-center">
+                          <img src="{{viewned.image}}" alt="">
+                          <figcaption>{{viewned.type}}</figcaption>
+                      </figure>
+
+                      <div class="approval-rate">
+                          <span class="text-center">{{viewned.approval}} de aprovação</span>
+                          <div class="progress-bar">
+                              <div class="progress-value" ng-style="{ 'width' : '{{viewned.approval}}' }"></div>
+                          </div>
+                      </div>
+
+                      <a class="button gold" href="{{viewned.url}}">Ver empresa</a>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <!-- /most-viewed -->
+
+</div>
+<!-- /home -->

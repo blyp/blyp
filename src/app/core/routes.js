@@ -7,6 +7,11 @@ angular.module('core.routes', ['ngRoute']).config([
 
     $routeProvider
 
+        .when('/', {
+            templateUrl : 'views/home/home.html',
+            controller  : 'home.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
