@@ -48,7 +48,8 @@ module.exports = function( grunt ) {
                             'jquery/dist/jquery.min.js',
                             'jquery/dist/jquery.min.map',
                             'js-cookie/src/js.cookie.js',
-                            'moment/min/moment.min.js'
+                            'moment/min/moment.min.js',
+                            'masonry/dist/masonry.pkgd.min.js'
                         ]
                     }
                 ]
@@ -197,7 +198,7 @@ module.exports = function( grunt ) {
 
         concat_css: {
             all : {
-                src : ["src/assets/css/**/*.css"],
+                src : ["src/assets/css/*.css"],
                 dest:  "<%= pkg.environment %>/assets/css/main.css"
             }
         },

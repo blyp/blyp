@@ -78,6 +78,18 @@ app.controller('home.controller', [
       }
     ];
 
+    $scope.ad = {
+
+      init : function() {
+
+        $('.poster').masonry({
+          itemSelector : '.poster-item',
+          percentPosition : true
+        });
+      }
+
+    };
+
     $scope.search = {
 
       fields : {
@@ -108,6 +120,7 @@ app.controller('home.controller', [
     $scope.carousel = {
 
       articles : function() {
+
         $("#owl-articles").owlCarousel({
           items : 3,
           itemsDesktopSmall : [1280,2],
@@ -116,6 +129,7 @@ app.controller('home.controller', [
       },
 
       viewned : function() {
+
         $("#owl-viewned").owlCarousel({
           items : 5,
           itemsDesktopSmall : [992,2],
@@ -126,6 +140,7 @@ app.controller('home.controller', [
     };
 
     setTimeout(function(){
+      $scope.ad.init();
       $scope.carousel.viewned();
       $scope.carousel.articles();
     }, 500);

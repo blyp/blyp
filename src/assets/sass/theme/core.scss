@@ -46,6 +46,11 @@ a {
       background: $gold;
       color: $dark-med;
     }
+
+    &.black {
+      background: $dark-med;
+      color: $white;
+    }
   }
 }
 

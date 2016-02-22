@@ -507,10 +507,112 @@ div#home {
     }
   }
 
+  //Home - Featured Ad
+  div.featured-poster {
+    background: $light;
+    padding: 5px 0;
+
+    .poster-item {
+      float: left;
+      display: table;
+      width: 277px;
+      height: 277px;
+
+      .wrapper {
+        border: 5px solid $light;
+        background: $light-med;
+        width: 100%;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        background-position: center;
+        background-size: cover;
+      }
+
+      &.poster-item--width2 {
+        width: 544px;
+      }
+
+      &.poster-item--height2 {
+        height: 544px;
+      }
+
+      &.poster-item--width3 {
+        width: 554px;
+      }
+
+      &.poster-item--height3 {
+        height: 554px;
+      }
+
+      @media (max-width: $screen-lg) {
+        width: 50%;
+
+        &.poster-item--width2, &.poster-item--width3 {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: $screen-xs) {
+        width: 100%;
+      }
+    }
+
+    .poster-content {
+      display: table;
+      width: 75%;
+      margin: 0 auto;
+      text-align: center;
+
+      @include border-radius(4px);
+
+      &.place {
+        padding: 20px;
+        color: $white;
+        background-color: transparent;
+        background-color: rgba(0, 0, 0, 0.7);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+
+        header {
+
+          i {
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 72px;
+            height: 72px;
+            font-size: 42px;
+            line-height: 64px;
+          }
+        }
+      }
+
+      header {
+        margin-bottom: 5px;
+
+        i {
+          margin-bottom: 15px;
+          font-size: 62px;
+        }
+
+        h3 {
+          font-size: $font-large;
+          font-weight: 800;
+        }
+      }
+
+      p {
+        font-size: $font-large;
+        font-weight: 300;
+        line-height: 22px;
+      }
+    }
+  }
+
   //Home - Last Articles
   div.last-articles {
     padding: 90px 0;
-    background: $light;
+    background: $white;
 
     header {
 
@@ -533,7 +635,7 @@ div#home {
 
           img {
             @include border-radius(50%);
-            border: 10px solid $white;
+            border: 10px solid $light;
             width: 220px;
             height: 220px;
           }
@@ -602,7 +704,8 @@ div#home {
 
   //Home - Most Viewed
   div.most-viewed {
-    margin: 110px 0;
+    padding: 110px 0;
+    background: $light;
 
     header {
 
@@ -659,7 +762,7 @@ div#home {
             width: 100%;
             height: 10px;
             margin: 5px 0 20px;
-            background: $light-med;
+            background: $white;
             @include box-shadow(none);
             @include border-radius(4px);
 
@@ -684,7 +787,7 @@ div#home {
     }
 
     @media (max-width: $screen-sm) {
-      margin: 65px 0;
+      padding: 65px 0;
 
       header {
 
