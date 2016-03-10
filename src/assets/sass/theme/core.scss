@@ -62,7 +62,41 @@ a {
 
 .container {
 
-  &.wrapper {
-    padding: 40px 0;
+  &.wrapping {
+    padding: 40px 15px;
+  }
+}
+
+nav {
+
+  .pagination {
+
+    li {
+
+      a {
+        background: $light-med;
+        color: $dark-med;
+        border: none;
+        margin: 4px;
+        font-size: $font-small;
+        @include border-radius(4px);
+
+        &:hover {
+          background: $gold;
+        }
+      }
+
+      &.active {
+
+        a {
+          background: $dark-med;
+          color: white;
+
+          &:hover {
+            background: $dark;
+          }
+        }
+      }
+    }
   }
 }

@@ -12,4 +12,18 @@ app.controller('search.controller', [
 
     var base = angular.element("#search");
 
+    $scope.filters = {
+
+        toggle : function() {
+
+            var $elem = base.find(".filters");
+
+            if ($elem.css("display") === "none") {
+                $elem.css("display", "block");
+            } else {
+                $elem.css("display", "none");
+            }
+        }
+    };
+
 }]);
