@@ -16,7 +16,7 @@
 
               <ul>
                   <li><input type="text" class="form-control type" placeholder="shopping, pub" ng-keyup="search.init()" ng-model="search.fields.type"></li>
-                  <li><input type="text" class="form-control place" placeholder="Curitiba, PR" disabled> <button type="submit" class="btn" ng-click="search.init()"><i class="material-icons md-24 action">search</i></button></li>
+                  <li><input type="text" class="form-control place" placeholder="Curitiba, PR" disabled> <button type="submit" class="btn" ng-click="search.submit()"><i class="material-icons md-24 action">search</i></button></li>
               </ul>
           </form>
 
@@ -164,16 +164,23 @@
                 </div>
             </div>
 
-            <div class="poster-item poster-item--width3">
+            <div class="poster-item newsletter poster-item--width3">
                 <div class="wrapper">
 
-                    <div class="poster-content notice">
+                    <div class="poster-content newsletter">
                         <header>
-                            <i class="material-icons">local_pizza</i>
-                            <h3>Empresa</h3>
+                            <i class="material-icons">info</i>
+                            <h3>E-mail para informações imperdíveis!</h3>
                         </header>
 
-                        <p>Categoria no Bairro, Cidade</p>
+                        <p>Informe o seu e-mail e receba informações, cupons e locais próximos de você.</p>
+
+                        <form class="search" role="search">
+                            <ul>
+                                <li><input type="text" class="form-control email" placeholder="Seu e-mail"></li>
+                                <li><input type="text" class="form-control cep" placeholder="Seu CEP"> <button type="submit" class="btn" >Enviar</button></li>
+                            </ul>
+                        </form>
                     </div>
 
                 </div>

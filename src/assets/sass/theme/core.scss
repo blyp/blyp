@@ -59,3 +59,10 @@ a {
   margin-right: -16px;
   margin-left: -16px;
 }
+
+.container {
+
+  &.wrapper {
+    padding: 40px 0;
+  }
+}

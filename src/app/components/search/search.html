@@ -1,0 +1,80 @@
+<div id="search" page="search">
+
+    <div class="container wrapper">
+        <div class="row">
+            <div class="results col-md-8">
+
+                <div class="result">
+                    <p>10 resultado(s) encontrados sobre <b>tag, tag</b></p>
+                    <span>Avalie este resultado</span>
+                </div>
+
+                <div class="filters">
+                    <form>
+                        <select class="form-control">
+                            <option>Ordenar por</option>
+                        </select>
+
+                        <select class="form-control">
+                            <option>Categorias</option>
+                        </select>
+
+                        <select class="form-control">
+                            <option>Bairros</option>
+                        </select>
+                    </form>
+                </div>
+
+                <ul class="lists">
+                    <li class="item" ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]">
+                        <figure class="text-center">
+                            <img src="https://static.festisite.com/static/partylogo/img/logos/burger-king.png" alt="">
+                        </figure>
+
+                        <div class="info">
+                            <header>
+                                <h3>Nome da Empresa</h3>
+                                <h4>Categoria da Empresa</h4>
+                            </header>
+
+                            <p class="address">Endereço da Empresa</p>
+                            <p class="city">Curitiba/PR</p>
+                            <p class="phone">(41) 3000-4000</p>
+                        </div>
+
+                        <div class="actions">
+                            <a class="button gold" href="{{article.url}}">Ler Mais</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <nav>
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                        </li>
+
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+
+                        <li>
+                            <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /lists -->
+
+            <div class="sidebar col-md-4">
+
+            </div>
+            <!-- /sidebar -->
+
+        </div>
+    </div>
+
+</div>
+<!-- /home -->
