@@ -1,1 +1,1 @@
-*:focus,*:hover,*:active{outline:none}
+input,select,textarea,button{outline:none !important}

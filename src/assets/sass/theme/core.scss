@@ -46,6 +46,11 @@ a {
       background: $gold;
       color: $dark-med;
     }
+
+    &.black {
+      background: $dark-med;
+      color: $white;
+    }
   }
 }
 
@@ -53,4 +58,11 @@ a {
 .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
   margin-right: -16px;
   margin-left: -16px;
+}
+
+.container {
+
+  &.wrapper {
+    padding: 40px 0;
+  }
 }

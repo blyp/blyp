@@ -1,6 +1,5 @@
 {
   "name": "material-design-icons",
-  "version": "2.0.0",
   "author": "Material Design Authors",
   "description": "Material Design icons by Google",
   "keywords": [
@@ -11,14 +10,15 @@
   ],
   "license": "CC-BY-4.0",
   "homepage": "http://google.com/design/spec",
-  "_release": "2.0.0",
+  "version": "2.2.0",
+  "_release": "2.2.0",
   "_resolution": {
     "type": "version",
-    "tag": "2.0.0",
-    "commit": "8fe17ce569f4b105e94d132ee8ba92a9d25ce27f"
+    "tag": "2.2.0",
+    "commit": "f6238c9176fd1af45ea965f5be9bce4d2e880ab5"
   },
   "_source": "git://github.com/google/material-design-icons.git",
-  "_target": "~2.0.0",
+  "_target": "^2.2.0",
   "_originalSource": "material-design-icons",
   "_direct": true
 }

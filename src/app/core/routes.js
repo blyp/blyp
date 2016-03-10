@@ -12,6 +12,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'home.controller'
         })
 
+        .when('/search', {
+            templateUrl : 'views/search/search.html',
+            controller  : 'search.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);

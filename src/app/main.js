@@ -62,4 +62,19 @@ app.config([
     }
 ]);
 
+app.run([
+    '$rootScope',
+    '$location',
+    function ($rootScope, $location) {
+
+        $rootScope.path = $location.path();
+
+        //$rootScope.path = false;
+
+        $rootScope.$on('$routeChangeStart', function () {
+            $rootScope.path = $location.path();
+        });
+    }
+]);
+
 window.app.Session = {};
