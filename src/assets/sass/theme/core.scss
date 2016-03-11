@@ -62,7 +62,78 @@ a {
 
 .container {
 
-  &.wrapper {
-    padding: 40px 0;
+  &.wrapping {
+    padding: 40px 15px;
+  }
+}
+
+nav {
+
+  .pagination {
+
+    li {
+
+      a {
+        background: $light-med;
+        color: $dark-med;
+        border: none;
+        margin: 4px;
+        font-size: $font-small;
+        @include border-radius(4px);
+
+        &:hover {
+          background: $gold;
+        }
+      }
+
+      &.active {
+
+        a {
+          background: $dark-med;
+          color: white;
+
+          &:hover {
+            background: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-md) {
+
+  .slideout-menu {
+    position: fixed;
+    padding: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+  }
+
+  .slideout-panel {
+    position: relative;
+    z-index: 1;
+    background: $white;
+  }
+
+  .slideout-open,
+  .slideout-open body,
+  .slideout-open .slideout-panel {
+    overflow: hidden;
+    @include box-shadow($light-med -2px -1px 2px inset);
+  }
+
+  .slideout-open .slideout-menu {
+    display: block;
+    padding: 40px 15px 40px 60px;
+    background: $light;
+    overflow-x: hidden;
   }
 }
