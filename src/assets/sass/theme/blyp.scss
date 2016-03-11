@@ -501,7 +501,7 @@ div#home {
           height: 48px;
           margin-bottom: 20px;
 
-          a{
+          a {
             width: 48px;
             height: 48px;
 
@@ -916,28 +916,150 @@ div#home {
 //Search
 div#search {
 
+  &.not-found {
+
+    .results {
+
+      .result {
+        line-height: 36px;
+
+        p {
+
+          i {
+            vertical-align: bottom;
+          }
+        }
+      }
+    }
+
+    form.search {
+      margin: 45px 45px 20px 45px;
+
+      header {
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: $font-large;
+          font-weight: 700;
+          line-height: 21px;
+        }
+      }
+
+      ul {
+
+        li {
+
+          input[type="text"] {
+            background: $light;
+            border: none;
+            height: 50px;
+            font-size: 21px;
+            font-weight: 700;
+            font-style: italic;
+            @include border-radius(4px, 4px);
+            @include box-shadow(0 0 0 0 rgba(0,0,0,0));
+
+            &.place {
+              float: left;
+              width: 88%;
+
+              @media (max-width: $screen-md) {
+                float: none;
+                width: 100%;
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          button {
+            float: right;
+            height: 50px;
+            width: 10%;
+            padding: 5px 10px 2px;
+            line-height: 1;
+            background: $gold;
+            color: $dark-med;
+            font-weight: 800;
+
+            &:hover {
+              color: $dark-med;
+            }
+
+            @media (max-width: $screen-md) {
+              float: none;
+              display: block;
+              width: 100%;
+            }
+          }
+
+          &:first-child {
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+  }
+
   .results {
 
     .result {
-      height: 21px;
+      line-height: 21px;
 
       p {
         float: left;
+        font-size: 21px;
+        text-transform: uppercase;
 
-        b {
+        em {
+          margin: 0 10px;
+          color: $light-dark;
+          text-transform: lowercase;
+          font-size: 18px;
+          font-style: italic;
+        }
+
+        strong {
           font-weight: 700;
+        }
+
+        @media (max-width: $screen-sm) {
+          font-size: 16px;
+
+          em {
+            font-size: 12px;
+          }
         }
       }
 
       span {
         float: right;
         font-weight: 700;
-        font-size: $font-small;
-        font-family: 'Consolas', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: $light-dark;
+        cursor: pointer;
 
-        @media (max-width: $screen-xs) {
+        @media (max-width: $screen-sm) {
           display: none;
         }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
       }
     }
 
@@ -946,7 +1068,7 @@ div#search {
       width: 100%;
       display: block;
       text-align: center;
-      margin: 20px 0;
+      margin: 30px 0 20px 0;
       padding: 4px;
       cursor: pointer;
       @include border-radius(4px);
@@ -957,7 +1079,7 @@ div#search {
     }
 
     .filters {
-      margin: 20px 0;
+      margin: 30px 0 20px 0;
 
       select {
         background: $light-med;
@@ -996,6 +1118,22 @@ div#search {
           img {
             width: 110px;
             height: 110px;
+          }
+
+          figcaption {
+            font-size: 10px;
+            padding: 5px;
+            background: $light;
+            border: 1px solid $light-med;
+            color: $light-med;
+            display: inline-block;
+            margin: 25px 0 0;
+            float: left;
+            @include border-radius(4px);
+
+            @media (max-width: $screen-sm) {
+              margin: 50px 0 0;
+            }
           }
 
           @media (max-width: $screen-sm) {
@@ -1243,7 +1381,7 @@ div#search {
 
     .maps {
       position: relative;
-      margin: 40px 0;
+      margin: 52px 0;
 
       @media (max-width: $screen-md) {
         margin-top: 20px;
