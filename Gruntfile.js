@@ -65,6 +65,17 @@ module.exports = function( grunt ) {
                     }
                 ]
             },
+            slideout : {
+                files : [
+                    {
+                        expand  : true,
+                        flatten : false,
+                        dest    : '<%= pkg.environment %>/assets/core/slideout.js/',
+                        cwd     : 'src/core/slideout.js/dist/',
+                        src     : [ '**/*' ]
+                    }
+                ]
+            },
             monosocial : {
                 files : [
                     {

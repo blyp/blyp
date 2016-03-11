@@ -2,7 +2,7 @@
 
     <div class="container wrapping">
         <div class="row">
-            <div class="results col-md-8">
+            <div id="results" class="results col-md-8">
 
                 <div class="result">
                     <p>15 resultado(s) encontrados sobre <b>tag, tag</b></p>
@@ -178,7 +178,7 @@
             </div>
             <!-- /lists -->
 
-            <div class="sidebar col-md-4">
+            <div id="sidebar" class="sidebar col-md-4">
                 <div class="maps">
                     <header>
                         <h2><i class="material-icons">map</i> Mapa e Direção</h2>
@@ -240,5 +240,14 @@
         </div>
     </div>
 
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('results'),
+            'menu': document.getElementById('sidebar'),
+            'padding': window.innerWidth - 40,
+            'tolerance': 100,
+            'side': 'right'
+        });
+    </script>
 </div>
 <!-- /search -->

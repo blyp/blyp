@@ -7,6 +7,7 @@ header.main {
   background: $gold;
   color: $dark;
   border-bottom: 3px solid $gold !important;
+  z-index: 9999;
 
   .navbar {
     padding-top: 3px;
@@ -1244,6 +1245,10 @@ div#search {
       position: relative;
       margin: 40px 0;
 
+      @media (max-width: $screen-md) {
+        margin-top: 20px;
+      }
+
       header {
         position: absolute;
         width: 60%;
@@ -1283,6 +1288,7 @@ div#search {
         }
       }
     }
+
     .newsletter {
       background: $gold;
       padding: 35px;
@@ -1406,10 +1412,6 @@ div#search {
         }
       }
     }
-
-    @media (max-width: $screen-md) {
-      display: none;
-    }
   }
 }
 
@@ -1417,6 +1419,7 @@ div#search {
 footer.main {
   background: $black;
   color: white;
+  z-index: 9999;
 
   a {
     color: white;
