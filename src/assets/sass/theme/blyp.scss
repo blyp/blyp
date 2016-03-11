@@ -1018,10 +1018,18 @@ div#search {
               font-weight: 700;
               font-size: $font-large;
               margin-bottom: 5px;
+
+              a:hover {
+                color: $gold;
+              }
             }
 
             h4 {
               font-size: $font-small;
+
+              a:hover {
+                color: $gold;
+              }
             }
           }
 
@@ -1232,6 +1240,176 @@ div#search {
 
   .sidebar {
 
+    .maps {
+      position: relative;
+      margin: 40px 0;
+
+      header {
+        position: absolute;
+        width: 60%;
+        top: -20px;
+        right: 0;
+        padding: 10px;
+        background: $gold;
+        @include border-radius(4px);
+
+        h2 {
+          font-size: $font-default;
+          font-weight: 700;
+          line-height: 24px;
+          text-transform: uppercase;
+          text-align: center;
+
+          i {
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+
+          @media (max-width: $screen-lg) {
+            font-size: $font-small;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        line-height: 0;
+        @include border-radius(4px);
+
+        img {
+          @include opacity(0);
+        }
+      }
+    }
+    .newsletter {
+      background: $gold;
+      padding: 35px;
+      margin: 40px 0;
+      @include border-radius(4px);
+
+      header {
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: $font-h2;
+          font-weight: 700;
+          line-height: 24px;
+          text-transform: uppercase;
+
+          i {
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+
+          @media (max-width: $screen-lg) {
+            font-size: $font-default;
+          }
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      form {
+
+        ul {
+
+          li {
+
+            input {
+              width: 70%;
+              height: 35px;
+              border: none;
+              float: left;
+
+              @media (max-width: $screen-lg) {
+                float: none;
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+              }
+            }
+
+            button {
+              float: right;
+              width: 25%;
+              background: $dark-med;
+              color: $white;
+              text-transform: uppercase;
+
+              @media (max-width: $screen-lg) {
+                float: none;
+                display: block;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+
+    .most-viewed, .similar-nearby {
+
+      header {
+
+        h2 {
+          font-size: $font-h2;
+          font-weight: 700;
+          line-height: 24px;
+          text-transform: uppercase;
+
+          i {
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      ul {
+        margin: 20px 0 0 35px;
+
+        li {
+          padding: 10px 0;
+
+          header {
+            margin-bottom: 5px;
+
+            h3 {
+              font-size: $font-default;
+              font-weight: 700;
+
+              a:hover {
+                color: $gold;
+              }
+            }
+          }
+
+          p {
+            font-size: $font-small;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
   }
 }
 

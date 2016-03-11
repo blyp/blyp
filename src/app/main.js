@@ -18,6 +18,15 @@ const IO = {
     HOST : "http://io.blyp.com.br/"
 };
 
+/*jshint esnext: true */
+const GSTATIC = {
+    HOST : "https://maps.googleapis.com/maps/api/staticmap?",
+    KEY : "AIzaSyCM0KLxQhBdC92YGTY0E8wp3GlpyXCtpSc",
+    ZOOM : "14",
+    SIZE : "360x320",
+    TYPE : "roadmap"
+};
+
 (function() {
 
     //fetchData().then(bootstrapApplication);

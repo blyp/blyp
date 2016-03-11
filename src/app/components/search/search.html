@@ -8,6 +8,7 @@
                     <p>15 resultado(s) encontrados sobre <b>tag, tag</b></p>
                     <span>Avalie este resultado</span>
                 </div>
+                <!-- /result -->
 
                 <span class="filters-toggle" ng-click="filters.toggle()"><i class="material-icons">filter_list</i></span>
 
@@ -26,6 +27,7 @@
                         </select>
                     </form>
                 </div>
+                <!-- /filters -->
 
                 <ul class="lists">
                     <li class="item sponsored" ng-repeat="i in [1,2,3,4,5]">
@@ -152,6 +154,7 @@
                         </div>
                     </li>
                 </ul>
+                <!-- /lists -->
 
                 <nav>
                     <ul class="pagination">
@@ -170,11 +173,67 @@
                         </li>
                     </ul>
                 </nav>
+                <!-- /pagination -->
+
             </div>
             <!-- /lists -->
 
             <div class="sidebar col-md-4">
+                <div class="maps">
+                    <header>
+                        <h2><i class="material-icons">map</i> Mapa e Direção</h2>
+                    </header>
 
+                    <a href="#" ng-style="{ 'background-image' : 'url({{maps.source()}})' }">
+                        <img src="{{maps.source()}}" alt="">
+                    </a>
+                </div>
+
+                <div class="most-viewed">
+                    <header>
+                        <h2><i class="material-icons">visibility</i> Buscas Relacionadas</h2>
+                    </header>
+
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5]">
+                            <header>
+                                <h3><a href="#">Nome da Empresa</a></h3>
+                            </header>
+
+                            <p class="address">Endereço da Empresa</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="newsletter">
+                    <header>
+                        <h2><i class="material-icons">info</i> Ofertas perto de você!</h2>
+                    </header>
+
+                    <p>Informe o seu e-mail e receba promoções imperdíveis.</p>
+
+                    <form class="search" role="search">
+                        <ul>
+                            <li><input type="text" class="form-control email" placeholder="Seu e-mail"> <button type="submit" class="btn" >Enviar</button></li>
+                        </ul>
+                    </form>
+                </div>
+
+                <div class="similar-nearby">
+                    <header>
+                        <h2><i class="material-icons">store</i> Lugares Similares</h2>
+                    </header>
+
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5]">
+                            <header>
+                                <h3><a href="#">Nome da Empresa</a></h3>
+                            </header>
+
+                            <p class="address">Endereço da Empresa</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <!-- /sidebar -->
 
@@ -182,4 +241,4 @@
     </div>
 
 </div>
-<!-- /home -->
+<!-- /search -->
