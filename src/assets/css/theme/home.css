@@ -1,21 +1,25 @@
 /*
 Error: An @import loop has been found:
-           /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss
            /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss
-        on line 2 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss
-        from line 23 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss
+           /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss
+        on line 23 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss
+        from line 2 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss
 
-1: // Compass
-2: @import "compass/reset";
-3: @import "compass/css3";
-4: @import "compass/css3/opacity";
-5: @import "compass/css3/box-shadow";
-6: @import "compass/css3/border-radius";
-7: @import "compass/css3/background-size";
+18:       h1 {
+19:         width: 232px;
+20:         height: 165px;
+21:         text-indent: -9999px;
+22:         background: url('../images/logo-blyp-home.png') no-repeat center;
+23:       }
+24:     }
+25: 
+26:     div.welcome {
+27:       margin: 110px 0 50px;
+28: 
 
 Backtrace:
-/Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss:2
 /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss:23
+/Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss:2
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:559:in `handle_import_loop!'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:319:in `visit_import'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -73,4 +77,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: An @import loop has been found:\A            /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss\A            /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss\A         on line 2 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss\A         from line 23 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss\A \A 1: // Compass\A 2: @import \"compass/reset\";\A 3: @import \"compass/css3\";\A 4: @import \"compass/css3/opacity\";\A 5: @import \"compass/css3/box-shadow\";\A 6: @import \"compass/css3/border-radius\";\A 7: @import \"compass/css3/background-size\";"; }
+  content: "Error: An @import loop has been found:\A            /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss\A            /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss imports /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss\A         on line 23 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/core.scss\A         from line 2 of /Users/leonardomoreira/www/blyp/src/assets/sass/theme/home.scss\A \A 18:       h1 {\A 19:         width: 232px;\A 20:         height: 165px;\A 21:         text-indent: -9999px;\A 22:         background: url('../images/logo-blyp-home.png') no-repeat center;\A 23:       }\A 24:     }\A 25: \A 26:     div.welcome {\A 27:       margin: 110px 0 50px;\A 28: "; }

@@ -1,0 +1,124 @@
+//Footer
+footer.main {
+  background: $black;
+  color: white;
+  z-index: 9999;
+
+  a {
+    color: white;
+
+    &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+
+  h2 {
+    margin: 130px 50px 90px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h4 {
+    color: $gold;
+  }
+
+  .social {
+
+    a {
+      height: 42px;
+      width: 42px;
+      background: $white;
+      display: block;
+      border-radius: 24px;
+      line-height: 42px;
+      margin: 0 auto;
+    }
+
+    .symbol {
+      margin: -2px;
+    }
+  }
+
+  .more {
+    margin: 90px 0;
+    font-weight: 300;
+
+    h4 {
+      margin-bottom: 15px;
+      font-size: $font-large;
+    }
+
+    ul {
+
+      li {
+        line-height: 24px;
+      }
+    }
+
+    .online, .offline {
+
+      .box-title {
+        @include border-radius(4px, 4px);
+        display: block;
+        padding: 15px 15px 10px;
+        margin-bottom: 25px;
+        background: $gold;
+        color: $dark-med;
+        font-weight: 400;
+
+        b {
+          vertical-align: top;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .online {
+
+      ul {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .copyright {
+    display: block;
+    margin: 25px 0;
+    color: $dark;
+    font-family: Consolas, monospace;
+
+    .logo-footer {
+      background: url('../images/logo-blyp-footer.png') no-repeat center;
+      display: block;
+      width: 58px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    h2 {
+      margin: 65px 40px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    .copyright {
+      margin: 15px 0;
+      font-size: $font-small;
+    }
+
+    .more {
+      margin: 65px 0 25px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    .more {
+
+      div {
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
