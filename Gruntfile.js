@@ -49,7 +49,8 @@ module.exports = function( grunt ) {
                             'jquery/dist/jquery.min.map',
                             'js-cookie/src/js.cookie.js',
                             'moment/min/moment.min.js',
-                            'masonry/dist/masonry.pkgd.min.js'
+                            'masonry/dist/masonry.pkgd.min.js',
+                            'angular-popeye/release/popeye.min.js'
                         ]
                     }
                 ]

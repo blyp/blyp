@@ -10,8 +10,6 @@ app.controller('search.controller', [
 
     console.log("Search");
 
-    var base = angular.element("#search");
-
     $scope.maps = {
 
         pullCenter : function() {
@@ -45,8 +43,6 @@ app.controller('search.controller', [
             }
         }
     };
-
-
 
 }]);
 
