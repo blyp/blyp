@@ -1,7 +1,8 @@
 var app = angular.module('blyp', [
     'core.routes',
     'ui.bootstrap',
-    'pathgather.popeye'
+    'pathgather.popeye',
+    'ngAnimate'
 ]);
 
 var socket = {};

@@ -6,9 +6,12 @@ app.controller('search.controller', [
     '$timeout',
     '$filter',
     '$window',
-    '$http', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http) {
+    '$http',
+    'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
 
     console.log("Search");
+
+    var base = angular.element("#search");
 
     $scope.maps = {
 
@@ -41,6 +44,21 @@ app.controller('search.controller', [
             } else {
                 $elem.css("display", "none");
             }
+        }
+    };
+
+    $scope.feedback = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/search/search.feedback.html",
+                controller: "search.feedback.controller",
+                modalClass: "feedback-modal"
+            });
         }
     };
 
