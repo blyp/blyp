@@ -1,6 +1,7 @@
 var app = angular.module('blyp', [
     'core.routes',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'pathgather.popeye'
 ]);
 
 var socket = {};
@@ -34,7 +35,7 @@ const GSTATIC = {
     fetchData();
 
     function fetchData() {
-        var initInjector = angular.injector(["ng"]);
+        var initInjector = angular.injector(['ng']);
         var $http = initInjector.get("$http");
 
         //var session = Cookies.get("blyp.com.br");
