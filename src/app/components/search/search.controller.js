@@ -62,5 +62,20 @@ app.controller('search.controller', [
         }
     };
 
+    $scope.share = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/share/share.html",
+                controller: "share.controller",
+                modalClass: "share-modal"
+            });
+        }
+    };
+
 }]);
 
