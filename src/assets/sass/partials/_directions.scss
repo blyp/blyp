@@ -1,0 +1,68 @@
+//Search Feedback
+.directions-modal {
+  background: $gold !important;
+  color: $white;
+
+  div.directions {
+    text-align: center;
+    margin: 20px 0;
+
+    header {
+      margin-bottom: 40px;
+
+      h2 {
+        font-size: $font-h1;
+        font-weight: 300;
+
+        @media (max-width: $screen-xs) {
+          font-size: $font-h2;
+        }
+      }
+    }
+
+    ul {
+      display: table;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 7px;
+
+        a {
+          color: $white;
+          padding: 10px 15px;
+          border: 2px solid $white;
+          text-transform: uppercase;
+          font-weight: 300;
+          @include border-radius(4px);
+
+          &:hover {
+            color: $dark;
+            border-color: $dark;
+          }
+
+          @media (max-width: $screen-xs) {
+              padding: 10px 7px;
+          }
+        }
+
+        @media (min-width: $screen-md) {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
