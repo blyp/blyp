@@ -77,5 +77,22 @@ app.controller('search.controller', [
         }
     };
 
+    $scope.directions = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/directions/directions.html",
+                controller: "directions.controller",
+                modalClass: "directions-modal"
+            });
+        }
+    };
+
+        $scope.directions.open();
+
 }]);
 
