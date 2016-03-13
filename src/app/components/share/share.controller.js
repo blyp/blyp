@@ -1,4 +1,4 @@
-app.controller('search.controller', [
+app.controller('share.controller', [
     '$scope',
     '$location',
     '$routeParams',
