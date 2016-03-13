@@ -1,0 +1,73 @@
+//Search Feedback
+.share-modal {
+  background: $gold !important;
+  color: $white;
+
+  div.share-options {
+    text-align: center;
+    margin: 20px 0;
+
+    header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: $font-h1;
+        font-weight: 300;
+      }
+    }
+
+    .social {
+      display: table;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 15px;
+
+        a {
+          height: 48px;
+          width: 48px;
+          background: #fff;
+          display: block;
+          border-radius: 24px;
+          line-height: 48px;
+        }
+
+        .symbol {
+          color: $gold;
+          font-size: 48px;
+          padding: 4px;
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    footer {
+      width: 285px;
+      margin: 0 auto;
+      text-align: left;
+
+      p {
+        margin-bottom: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      input {
+        border: none;
+        background: $light;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

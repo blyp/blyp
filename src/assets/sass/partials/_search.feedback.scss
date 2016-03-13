@@ -1,0 +1,58 @@
+//Search Feedback
+.feedback-modal {
+  background: $gold !important;
+  color: $white;
+
+  div.search-feedback {
+    text-align: center;
+    margin: 20px 0;
+
+    header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: $font-h1;
+        font-weight: 300;
+
+        @media (max-width: $screen-xs) {
+          font-size: $font-h2;
+        }
+      }
+    }
+
+    .mood {
+      display: table;
+      margin: 0 auto;
+
+      li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 10px 5px;
+
+        i {
+          font-size: 48px;
+
+          @media (max-width: $screen-xs) {
+            font-size: 36px;
+          }
+        }
+
+        &:hover {
+
+          i {
+            color: $dark;
+          }
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+  }
+}

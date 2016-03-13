@@ -10,7 +10,8 @@
 */
 
 body.popeye-modal-open {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .popeye-modal-container {
   position: fixed;
@@ -20,109 +21,173 @@ body.popeye-modal-open {
   top: 0;
   z-index: 5;
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   /* "ghost" element to use for vertical alignment
     (see https://css-tricks.com/centering-in-the-unknown/) */ }
+
 .popeye-modal-container.ng-enter {
   -webkit-animation: popeye-fade-in 0.4s;
-  animation: popeye-fade-in 0.4s; }
+  animation: popeye-fade-in 0.4s;
+}
+
 .popeye-modal-container.ng-enter .popeye-modal {
   -webkit-animation: popeye-slide-up 0.4s;
-  animation: popeye-slide-up 0.4s; }
+  animation: popeye-slide-up 0.4s;
+}
+
 .popeye-modal-container.ng-leave {
   -webkit-animation: popeye-fade-out 0.4s;
-  animation: popeye-fade-out 0.4s; }
+  animation: popeye-fade-out 0.4s;
+}
+
 .popeye-modal-container.ng-leave .popeye-modal {
   -webkit-animation: popeye-slide-down 0.4s forwards;
-  animation: popeye-slide-down 0.4s forwards; }
+  animation: popeye-slide-down 0.4s forwards;
+}
+
 .popeye-modal-container::before {
   content: '';
   display: inline-block;
   height: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+
 .popeye-modal-container .popeye-modal {
   position: relative;
   text-align: left;
   vertical-align: middle;
   display: inline-block;
-  width: 40%;
+  width: 35%;
   border-radius: 4px;
   border: none;
   z-index: 6;
   padding: 2em 1.5em 1.5em 1.5em;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  background: $light;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: $screen-lg) {
+    width: 40%;
+  }
+
+  @media (max-width: $screen-md) {
+    width: 50%;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 80%;
+  }
+
+  @media (max-width: $screen-xs) {
+    width: 90%;
+  }
+}
+
 .popeye-modal-container .popeye-modal a.popeye-close-modal {
   position: absolute;
   top: 1em;
   right: 1em;
   font-weight: 100;
   text-decoration: none;
-  color: inherit; }
-.popeye-modal-container .popeye-modal a.popeye-close-modal::after {
-  content: "\d7"; }
+  color: inherit;
+}
+
+.popeye-modal-container .popeye-modal a.popeye-close-modal::after{
+  content: "\d7";
+}
 
 @-webkit-keyframes popeye-slide-up {
+
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
+    transform: translateY(100%);
+  }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%); } }
+    transform: translateY(0%);
+  }
+}
 
 @keyframes popeye-slide-up {
+
   0% {
     opacity: 0;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%); }
+    transform: translateY(100%);
+  }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%); } }
+    transform: translateY(0%);
+  }
+}
 
 @-webkit-keyframes popeye-slide-down {
+
   0% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%); }
+    transform: translateY(0%);
+  }
   100% {
     opacity: 0;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%); } }
+    transform: translateY(100%);
+  }
+}
 
 @keyframes popeye-slide-down {
+
   0% {
     opacity: 1;
     -webkit-transform: translateY(0%);
-    transform: translateY(0%); }
+    transform: translateY(0%);
+  }
   100% {
     opacity: 0;
     -webkit-transform: translateY(100%);
-    transform: translateY(100%); } }
+    transform: translateY(100%);
+  }
+}
 
 @-webkit-keyframes popeye-fade-in {
+
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @keyframes popeye-fade-in {
+
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 @-webkit-keyframes popeye-fade-out {
+
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
 
 @keyframes popeye-fade-out {
+
   0% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
+    opacity: 0;
+  }
+}
