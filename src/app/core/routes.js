@@ -17,6 +17,16 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'search.controller'
         })
 
+        .when('/articles', {
+            templateUrl : 'views/article/list.html',
+            controller  : 'article.list.controller'
+        })
+
+        .when('/articles/:slug', {
+            templateUrl : 'views/article/article.html',
+            controller  : 'article.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
