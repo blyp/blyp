@@ -39,4 +39,19 @@ app.controller('header.controller', [
             });
         }
     };
+
+    $scope.forgot = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/forgot/forgot.html",
+                controller: "forgot.controller",
+                modalClass: "forgot-modal"
+            });
+        }
+    };
 }]);

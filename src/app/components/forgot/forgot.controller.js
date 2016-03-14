@@ -1,4 +1,4 @@
-app.controller('register.controller', [
+app.controller('forgot.controller', [
     '$scope',
     '$location',
     '$routeParams',
@@ -9,11 +9,11 @@ app.controller('register.controller', [
     '$http',
     'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
 
-    console.log("Register");
+    console.log("Forgot Password");
 
-    var base = angular.element(".register");
+    var base = angular.element(".forgot");
 
-    $scope.register = {
+    $scope.forgot = {
 
         close : function() {
             Popeye.closeCurrentModal();
