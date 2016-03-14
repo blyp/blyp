@@ -45,12 +45,13 @@ module.exports = function( grunt ) {
                             'angular-sanitize/angular-sanitize.min.js.map',
                             'angular-bootstrap/ui-bootstrap.min.js',
                             'angular-bootstrap/ui-bootstrap-tpls.min.js',
+                            'angular-popeye/release/popeye.min.js',
+                            'underscore/underscore-min.js',
                             'jquery/dist/jquery.min.js',
                             'jquery/dist/jquery.min.map',
                             'js-cookie/src/js.cookie.js',
                             'moment/min/moment.min.js',
-                            'masonry/dist/masonry.pkgd.min.js',
-                            'angular-popeye/release/popeye.min.js'
+                            'masonry/dist/masonry.pkgd.min.js'
                         ]
                     }
                 ]
@@ -127,17 +128,6 @@ module.exports = function( grunt ) {
                         dest   : '<%= pkg.environment %>/views/',
                         cwd    : 'src/app/components/',
                         src    : [ '**/*.html' ]
-                    }
-                ]
-            },
-            common : {
-                files : [
-                    {
-                        expand  : true,
-                        flatten : true,
-                        dest    : '<%= pkg.environment %>/views/common/',
-                        cwd     : 'src/app/common/',
-                        src     : [ '**/*.html' ]
                     }
                 ]
             },

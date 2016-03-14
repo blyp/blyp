@@ -18,8 +18,11 @@ body {
 a {
   color: $dark-med;
   text-decoration: none;
+  -webkit-transition: color .2s, background-color .2s;
+  -o-transition: color .2s, background-color .2s;
+  transition: color .2s, background-color .2s;
 
-  &:hover, &:focus, &:active {
+  &:hover, &:focus, &:active, &:link, &:visited {
     color: $dark-med;
     text-decoration: none;
   }
@@ -56,6 +59,10 @@ a {
   &.wrapping {
     padding: 40px 15px;
   }
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background: transparent;
 }
 
 nav {

@@ -1,0 +1,43 @@
+<header class="main" ng-class="{ home : $root.path =='/' }">
+    <nav class="navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <i class="material-icons action hidden-md hidden-lg">menu</i>
+                </button>
+
+                <a class="navbar-brand" href="/"><i class="logo-navbar center-block"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control type" placeholder="shopping, pub">
+                        <span><strong>em</strong></span>
+                        <input type="text" class="form-control place" placeholder="Curitiba, PR">
+                    </div>
+                    <button type="submit" class="btn"><i class="material-icons md-24 action">search</i></button>
+                </form>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img class="img-circle navbar-user-img" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira"> Leonardo Moreira <span class="expand-more"><i class="material-icons">expand_more</i></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Conta</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Criar Negócio</a></li>
+                            <li><a href="#">Gerenciar Negócios <span class="badge">2</span></a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>

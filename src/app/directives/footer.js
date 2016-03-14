@@ -6,7 +6,7 @@ app.directive(
             controller: "footer.controller",
             restrict: "AE",
             replace: true,
-            templateUrl: "views/common/footer.html"
+            templateUrl: "views/footer/footer.html"
         });
 
     }

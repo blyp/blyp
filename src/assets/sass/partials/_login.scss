@@ -36,6 +36,9 @@
           font-size: 21px;
           color: $white;
           line-height: 36px;
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
           @include border-radius(4px);
 
           span {
