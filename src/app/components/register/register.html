@@ -1,4 +1,4 @@
-<div class="login">
+<div class="register">
     <div class="social-network">
         <header>
             <h2>Acessar com</h2>
@@ -13,22 +13,26 @@
 
     <form>
         <header>
-            <h2>Entrar com meu e-mail</h2>
+            <h2>Criar uma conta</h2>
         </header>
 
         <ul>
+            <li>
+                <input type="text" class="form-control" placeholder="Nome">
+            </li>
+
             <li>
                 <input type="text" class="form-control" placeholder="E-mail">
             </li>
 
             <li>
                 <input type="password" class="form-control" placeholder="Senha">
-                <span><a href="javascript:void(0)" ng-click="">Esqueceu sua senha?</a></span>
+                <span>Clicando em "Cadastrar", você aceita os <a href="javascript:void(0)" ng-click="">Termos de Uso.</a></span>
             </li>
 
             <li>
-                <button type="submit" class="btn">Login</button>
-                <span>Não possui uma conta? <a href="javascript:void(0)" ng-click="register.open()">Cadastre-se.</a></span>
+                <button type="submit" class="btn">Cadastrar</button>
+                <span>Já possui uma conta? <a href="javascript:void(0)" ng-click="login.open()">Entrar.</a></span>
             </li>
         </ul>
     </form>

@@ -24,4 +24,19 @@ app.controller('header.controller', [
             });
         }
     };
+
+    $scope.register = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/register/register.html",
+                controller: "register.controller",
+                modalClass: "register-modal"
+            });
+        }
+    };
 }]);

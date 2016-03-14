@@ -1,4 +1,4 @@
-app.controller('login.controller', [
+app.controller('register.controller', [
     '$scope',
     '$location',
     '$routeParams',
@@ -11,9 +11,9 @@ app.controller('login.controller', [
 
     console.log("Login");
 
-    var base = angular.element(".login");
+    var base = angular.element(".register");
 
-    $scope.login = {
+    $scope.register = {
 
         close : function() {
             Popeye.closeCurrentModal();
