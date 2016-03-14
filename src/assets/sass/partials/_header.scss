@@ -39,9 +39,9 @@ header.main {
           line-height: 1;
           color: $dark-med;
 
-          &:hover {
+          &:hover, &:focus, &:active {
             color: $dark-med;
-            background: none;
+            background: transparent;
           }
 
           strong {
@@ -49,8 +49,8 @@ header.main {
           }
         }
 
-        &:hover {
-          background: none;
+        &:hover, &:focus, &:active {
+          background: transparent;
         }
 
         &:after {
@@ -125,7 +125,7 @@ header.main {
         box-shadow: none;
         -webkit-box-shadow: none;
         border: none;
-        z-index: 9999;
+        z-index: 2;
         position: relative;
 
         ul {

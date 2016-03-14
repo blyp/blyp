@@ -34,12 +34,11 @@
           padding: 10px 15px;
           border: 2px solid $white;
           text-transform: uppercase;
-          font-weight: 300;
           @include border-radius(4px);
 
           &:hover {
             color: $dark;
-            border-color: $dark;
+            background: $gold-hover;
           }
 
           @media (max-width: $screen-xs) {

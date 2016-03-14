@@ -92,7 +92,5 @@ app.controller('search.controller', [
         }
     };
 
-        $scope.directions.open();
-
 }]);
 
