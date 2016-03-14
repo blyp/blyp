@@ -39,6 +39,12 @@
           font-size: 48px;
           padding: 4px;
         }
+
+        &:hover {
+          .symbol {
+            color: $gold-hover;
+          }
+        }
       }
 
       &:after {
@@ -60,7 +66,6 @@
       p {
         margin-bottom: 15px;
         font-weight: 300;
-        text-transform: uppercase;
       }
 
       input {

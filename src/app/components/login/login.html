@@ -1,14 +1,15 @@
 <div class="login">
-    <div class="social">
+    <div class="social-network">
         <header>
             <h2>Acessar com</h2>
         </header>
 
-
-        <a href="javascript:void(0)" ng-click="">Facebook</a>
+        <ul>
+            <li><a href="javascript:void(0)" ng-click=""><span><i class="symbol">circlefacebook</i></span> Facebook</a></li>
+        </ul>
     </div>
 
-    <span class="divisionr">ou</span>
+    <div class="division"><span>ou</span></div>
 
     <form>
         <header>
@@ -17,12 +18,18 @@
 
         <ul>
             <li>
+                <input type="text" class="form-control" placeholder="E-mail">
+            </li>
 
+            <li>
+                <input type="password" class="form-control" placeholder="Senha">
+                <span><a href="javascript:void(0)" ng-click="">Esqueceu sua senha?</a></span>
+            </li>
+
+            <li>
+                <button type="submit" class="btn">Login</button>
+                <span>Não possui uma conta? <a href="javascript:void(0)" ng-click="">Cadastre-se.</a></span>
             </li>
         </ul>
     </form>
-
-    <footer>
-        <p>Não possui um conta? Cadastre-se</p>
-    </footer>
 </div>
