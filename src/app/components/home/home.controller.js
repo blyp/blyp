@@ -17,28 +17,28 @@ app.controller('home.controller', [
             "author" : {
             "name" : "Nome do Autor",
             "image" : "http://images.hngn.com/data/images/full/136378/jaimie-alexander.jpg?w=350&h=350"
-        },
+            },
             "title" : "Título do Artigo",
             "description" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "url" : "/"
+            "url" : "/articles/mussum-ipsum-cacilds-vidis-vitro-abertis"
         },
         {
             "author" : {
             "name" : "Nome do Autor",
             "image" : "http://images.hngn.com/data/images/full/136378/jaimie-alexander.jpg?w=350&h=350"
-        },
+            },
             "title" : "Título do Artigo",
             "description" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "url" : "/"
+            "url" : "/articles/mussum-ipsum-cacilds-vidis-vitro-abertis"
         },
         {
             "author" : {
             "name" : "Nome do Autor",
             "image" : "http://images.hngn.com/data/images/full/136378/jaimie-alexander.jpg?w=350&h=350"
-        },
+            },
             "title" : "Título do Artigo",
             "description" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "url" : "/"
+            "url" : "/articles/mussum-ipsum-cacilds-vidis-vitro-abertis"
         }
     ];
 
