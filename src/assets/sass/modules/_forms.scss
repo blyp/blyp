@@ -7,3 +7,42 @@ input, select, textarea, button {
     @include box-shadow(0 0 0 0 rgba(0,0,0,0) !important);
   }
 }
+
+button, input[type="submit"], input[type="reset"] {
+
+  &.button {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 15px;
+    @include border-radius(4px);
+
+    &.gold {
+      background: transparent;
+      border: 2px solid $gold;
+      color: $dark-med;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+
+    &.black {
+      background: $dark-med;
+      color: $white;
+    }
+  }
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  border: none;
+  @include border-radius(4px);
+
+  &.default {
+    background: $white;
+  }
+}

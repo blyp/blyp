@@ -1,0 +1,90 @@
+<div id="article" class="read" page="article">
+
+    <div class="container wrapping">
+        <div class="row col-md-12">
+            <header>
+                <h1>Mussum ipsum cacilds, vidis litro abertis.</h1>
+
+                <div class="author">
+                    <figure>
+                        <img class="img-circle" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira">
+                    </figure>
+
+                    <div class="info">
+                        <h2>Leonardo Moreira</h2>
+                        <span>10 de Março de 2016</span>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <!-- /header -->
+
+    <div class="featured-image" ng-style="{ 'background-image' : 'url(https://cdn-images-1.medium.com/fit/t/800/240/1*7WrDvHvEaMnsSo7s0-W9pw.jpeg)' }">     </div>
+    <!-- /image -->
+
+    <div class="container wrapping">
+        <div class="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+            <article>
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+            </article>
+
+            <footer>
+                <div class="tags">
+                    <a href="/articles/tags/{{i}}" ng-repeat="i in [1,2,3]">Tag {{i}}</a>
+                </div>
+
+                <ul class="social">
+                    <li><i class="material-icons">favorite</i></li>
+                    <li ng-click="share.open()"><i class="material-icons">share</i></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <!-- /article -->
+
+    <div class="recent-articles">
+        <div class="container">
+            <div class="row col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+                <header>
+                    <h2>Comentários</h2>
+                </header>
+
+                <form class="comments">
+                    <ul>
+                        <li>
+                            <textarea class="comment default" placeholder="Escreva seu comentário."></textarea>
+                        </li>
+
+                        <li>
+                            <button type="submit" class="button gold">Enviar</button>
+                        </li>
+                    </ul>
+                </form>
+
+                <div class="responses">
+                    <div class="response" ng-repeat="i in [1,2,3]">
+                        <div class="author">
+                            <figure>
+                                <img class="img-circle" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira">
+                            </figure>
+
+                            <div class="info">
+                                <h2>Leonardo Moreira</h2>
+                                <span>10 de Março de 2016</span>
+                            </div>
+                        </div>
+                        <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /comments -->
+
+</div>
+<!-- /article -->

@@ -13,6 +13,10 @@
       h2 {
         font-size: $font-h1;
         font-weight: 300;
+
+        @media (max-width: $screen-sm) {
+          font-size: $font-h2;
+        }
       }
     }
 
@@ -44,6 +48,10 @@
           .symbol {
             color: $gold-hover;
           }
+        }
+
+        @media (max-width: $screen-sm) {
+          padding: 5px 5px;
         }
       }
 

@@ -182,6 +182,13 @@ div#home {
               display: none;
             }
           }
+
+          &:hover {
+
+            b {
+              color: $gold;
+            }
+          }
         }
       }
     }
@@ -520,7 +527,7 @@ div#home {
 
           p {
             margin-top: 20px;
-            line-height: 18px;
+            line-height: 21px;
           }
         }
 
