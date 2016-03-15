@@ -32,6 +32,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'article.tags.controller'
         })
 
+        .when('/account', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
