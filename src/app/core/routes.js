@@ -27,6 +27,11 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'article.controller'
         })
 
+        .when('/articles/tags/:slug', {
+            templateUrl : 'views/article/tags.html',
+            controller  : 'article.tags.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
