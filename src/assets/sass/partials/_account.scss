@@ -1,6 +1,58 @@
 //Account
 div#account {
 
+  .container-submenu {
+    width: 100%;
+
+    .btn-group-inverse {
+      margin-top: 15px;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    .btn-submenu {
+      background: $light-med;
+      text-align: left;
+      width: 100%;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 10px 15px;
+      border: none;
+      @include border-radius(0);
+
+      i {
+        vertical-align: bottom;
+        margin-right: 5px;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
+      border: none;
+      margin-top: 0;
+      @include border-radius(0);
+
+      li {
+        line-height: 24px;
+
+        a {
+          padding: 10px 15px;
+
+          i {
+            vertical-align: middle;
+            margin-right: 5px;
+          }
+
+          &:hover, &:active, &:visited {
+            background: $light-med;
+          }
+        }
+      }
+    }
+  }
+
   .menu {
 
     header {
@@ -48,7 +100,7 @@ div#account {
         font-size: 36px;
         line-height: 48px;
         font-weight: 700;
-        color: $light-dark;
+        color: $dark-med;
         margin-bottom: 40px;
 
         @media (max-width: $screen-sm) {

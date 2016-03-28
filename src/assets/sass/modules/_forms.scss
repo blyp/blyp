@@ -46,3 +46,92 @@ textarea {
     background: $white;
   }
 }
+
+form.default {
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    input {
+      border-color: $light-med;
+
+      &:hover, &:focus, &:active {
+        border-color: $light-med;
+      }
+    }
+
+    .help-block {
+      font-size: $font-small;
+      margin-top: 10px;
+    }
+
+    &.actions {
+      text-align: right;
+
+      @media (max-width: $screen-md) {
+        text-align: center;
+      }
+    }
+  }
+
+  .checkbox, .radio {
+
+    label {
+      vertical-align: middle;
+      line-height: 18px;
+    }
+  }
+
+  button {
+    -webkit-transition: color .2s, background-color .2s;
+    -o-transition: color .2s, background-color .2s;
+    transition: color .2s, background-color .2s;
+
+    &.btn {
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 10px 15px;
+      margin-right: 15px;
+      @include border-radius(4px);
+
+      &.btn-submit {
+        background: transparent;
+        border: 2px solid $gold;
+        color: $dark-med;
+
+        &:hover {
+          background: $gold;
+        }
+      }
+
+      &.btn-reset {
+        background: transparent;
+        border: 2px solid transparent;
+        color: $dark-med;
+
+        &:hover {
+          border-color: $dark-med;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+}
