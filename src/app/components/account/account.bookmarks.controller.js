@@ -1,4 +1,4 @@
-app.controller('account.controller', [
+app.controller('account.bookmarks.controller', [
     '$scope',
     '$location',
     '$routeParams',
@@ -9,11 +9,9 @@ app.controller('account.controller', [
     '$http',
     'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
 
-    console.log("Account");
+    console.log("Account Bookmarks");
 
     var base = angular.element("#account");
-
-    $scope.alias = $route.current.$$route.alias;
 
 }]);
 

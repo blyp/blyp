@@ -3,10 +3,10 @@ app.directive(
     function() {
 
         return({
-            controller: "account.controller",
+            controller: "account.nav.controller",
             restrict: "AE",
             replace: true,
-            templateUrl: "views/account/account.nav.html"
+            templateUrl: "views/account/partials/_nav.html"
         });
 
     }

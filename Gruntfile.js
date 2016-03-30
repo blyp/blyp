@@ -47,6 +47,7 @@ module.exports = function( grunt ) {
                             'angular-bootstrap/ui-bootstrap-tpls.min.js',
                             'angular-popeye/release/popeye.min.js',
                             'underscore/underscore-min.js',
+                            'underscore/underscore-min.map',
                             'jquery/dist/jquery.min.js',
                             'jquery/dist/jquery.min.map',
                             'js-cookie/src/js.cookie.js',

@@ -1,8 +1,14 @@
 //Account
 div#account {
 
+  .container-main {
+
+    @media (max-width: $screen-md) {
+      padding-top: 30px;
+    }
+  }
+
   .container-submenu {
-    width: 100%;
 
     .btn-group-inverse {
       margin-top: 15px;
@@ -10,6 +16,23 @@ div#account {
       display: inline-block;
       vertical-align: middle;
       width: 100%;
+
+      i.expand-more {
+        float: right;
+        -webkit-transition: transform .2s;
+        -o-transition: transform .2s;
+        transition: transform .2s;
+      }
+
+      &.open {
+
+        i.expand-more {
+          -webkit-transform: rotateX(180deg);
+          -ms-transform: rotateX(180deg);
+          -o-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+        }
+      }
     }
 
     .btn-submenu {
@@ -26,12 +49,17 @@ div#account {
         vertical-align: bottom;
         margin-right: 5px;
       }
+
+      @media (max-width: $screen-md) {
+        margin: 30px 0 0;
+      }
     }
 
     .dropdown-menu {
       width: 100%;
       border: none;
       margin-top: 0;
+      padding: 0;
       @include border-radius(0);
 
       li {
@@ -49,6 +77,11 @@ div#account {
             background: $light-med;
           }
         }
+
+        &.active > a, &.active > a:focus, &.active > a:hover {
+          background: none;
+          background-color: $dark-med;
+        }
       }
     }
   }
@@ -62,11 +95,10 @@ div#account {
         font-weight: 700;
         margin-bottom: 40px;
 
-        @media (max-width: $screen-sm) {
+        @media (max-width: $screen-lg) {
           font-size: 36px;
         }
       }
-
     }
 
     ul.nav {
@@ -87,6 +119,10 @@ div#account {
           margin: 9px 0;
           overflow: hidden;
           background-color: $light-med;
+        }
+
+        &.active > a, &.active > a:focus, &.active > a:hover {
+          background-color: $dark-med;
         }
       }
     }
@@ -109,8 +145,9 @@ div#account {
         }
       }
 
+      @media (max-width: $screen-md) {
+        display: none;
+      }
     }
-
   }
-
 }
