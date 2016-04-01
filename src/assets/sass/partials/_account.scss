@@ -79,8 +79,7 @@ div#account {
         }
 
         &.active > a, &.active > a:focus, &.active > a:hover {
-          background: none;
-          background-color: $dark-med;
+          background: $dark-med;
         }
       }
     }
