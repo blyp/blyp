@@ -57,11 +57,11 @@ form.default {
       margin-bottom: 10px;
     }
 
-    input {
+    input, select, textarea {
       border-color: $light-med;
 
       &:hover, &:focus, &:active {
-        border-color: $light-med;
+        border-color: $light-dark;
       }
     }
 
