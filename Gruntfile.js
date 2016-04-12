@@ -46,6 +46,8 @@ module.exports = function( grunt ) {
                             'angular-bootstrap/ui-bootstrap.min.js',
                             'angular-bootstrap/ui-bootstrap-tpls.min.js',
                             'angular-popeye/release/popeye.min.js',
+                            'angular-input-masks/angular-input-masks.min.js',
+                            'angular-input-masks/angular-input-masks-dependencies.min.js',
                             'underscore/underscore-min.js',
                             'underscore/underscore-min.map',
                             'jquery/dist/jquery.min.js',

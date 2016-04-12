@@ -5,25 +5,60 @@
 
     <form class="default">
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            <p class="help-block">Example block-level help text here.</p>
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" readonly>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" readonly>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Example block-level help text here.</p>
+            <label for="email">Sexo</label>
+            <input type="email" class="form-control" id="email" readonly>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <p class="form-control-static">email@example.com</p>
+            <label for="cep">Data de Nascimento</label>
+            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="cep">Número do Celular</label>
+            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="cep">Modelo do Celular</label>
+            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="cep">CEP</label>
+            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
+        </div>
+
+
+        <div class="form-group">
+            <label for="country">País</label>
+            <select class="form-control" id="country" name="country">
+                <option value="br" selected="selected">Brasil</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Por favor, mandem recomendações no meu e-mail
+                <span class="control-indicator"></span>
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Por favor, mandem blyps no meu celular
+                <span class="control-indicator"></span>
+            </label>
         </div>
 
         <div class="form-group actions">

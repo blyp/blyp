@@ -5,25 +5,92 @@
 
     <form class="default">
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            <p class="help-block">Example block-level help text here.</p>
+            <label for="profile_name">Nome</label>
+            <input type="text" class="form-control" id="profile_name" name="profile[name]" ng-model="profile.name">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <label for="profile_email">E-mail</label>
+            <input type="email" class="form-control" id="profile_email" name="profile[email]" ng-model="profile.email">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Example block-level help text here.</p>
+            <label for="profile_gender">Sexo</label>
+            <select class="form-control" id="profile_gender" name="profile[gender]" ng-model="profile.gender">
+                <option value="M" ng-selected="profile.gender == 'M'">Masculino</option>
+                <option value="F" ng-selected="profile.gender == 'F'">Feminino</option>
+            </select>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <p class="form-control-static">email@example.com</p>
+            <label for="profile_birthdate">Data de Nascimento</label>
+            <div id="profile_birthdate" class="bootstrap-date row">
+                <div class="col-xs-4">
+                    <select id="profile_birthdate_day" name="profile[birthdate][day]" class="form-control" ng-model="profile.birthdate.day">
+                        <option ng-repeat="i in _.range(1,32)" value="{{i}}">{{i}}</option>
+                    </select>
+                </div>
+
+                <div class="col-xs-4">
+                    <select id="profile_birthdate_month" name="profile[birthdate][month]" class="form-control" ng-model="profile.birthdate.month">
+                        <option ng-repeat="i in _.range(1,13)" value="{{i}}">{{i}}</option>
+                    </select>
+                </div>
+
+                <div class="col-xs-4">
+                    <select id="profile_birthdate_year" name="profile[birthdate][year]" class="form-control" ng-model="profile.birthdate.year">
+                        <option ng-repeat="i in _.range(1911,2016)" value="{{i}}">{{i}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="profile_mobile_number">Número do Celular</label>
+            <input type="text" class="form-control" name="profile[mobile][number]" id="profile_mobile_number" ng-model="profile.mobile.number" ui-br-phone-number>
+        </div>
+
+        <div class="form-group">
+            <label for="profile_mobile_brand">Modelo do Celular</label>
+            <select id="profile_mobile_brand" name="profile[mobile][brand]" class="form-control" ng-model="profile.mobile.brand">
+                <option value="" selected>Por favor, escolha</option>
+                <option value="Android">Android</option>
+                <option value="Symbian">Symbian</option>
+                <option value="Windows Mobile">Windows Mobile</option>
+                <option value="Apple iPhone">Apple iPhone</option>
+                <option value="BlackBerry">BlackBerry</option>
+                <option value="LG">LG</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Nokia">Nokia</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Sony Ericsson">Sony Ericsson</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="profile_postal">CEP</label>
+            <input type="text" class="form-control" name="profile[postal]" id="profile_postal" ng-model="profile.postal" ui-br-cep-mask>
+        </div>
+
+        <div class="form-group">
+            <label for="profile_country">País</label>
+            <select class="form-control" id="profile_country" name="profile[country]" ng-model="profile.country">
+                <option value="br" ng-selected="profile.country == 'BR'">Brasil</option>
+            </select>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="profile_notification_email" name="profile[notification][email]" ng-model="profile.notification.email"> Por favor, mandem recomendações no meu e-mail
+                <span class="control-indicator"></span>
+            </label>
+        </div>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" id="profile_notification_mobile" name="profile[notification][mobile]" ng-model="profile.notification.mobile"> Por favor, mandem blyps no meu celular
+                <span class="control-indicator"></span>
+            </label>
         </div>
 
         <div class="form-group actions">
