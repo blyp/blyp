@@ -17,12 +17,24 @@ app.controller('account.overview.controller', [
         name : 'Leonardo Moreira',
         email : 'eu@leonardomoreira.com.br',
         gender : 'M',
-        birthdate : {
-            day : 19,
-            month : 9,
-            year : 1987
+        identity : {
+            cpf : '111.333.777-00'
         },
-        postal : '86812-055'
+        birthdate : {
+            day : '19',
+            month : '9',
+            year : '1987'
+        },
+        mobile : {
+            number : '(43) 9170-1772',
+            brand : 'Apple iPhone'
+        },
+        postal : '86812-055',
+        country : 'BR',
+        notification : {
+            email : true,
+            mobile : false
+        }
     };
 
 }]);

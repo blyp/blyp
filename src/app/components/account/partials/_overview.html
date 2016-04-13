@@ -1,69 +1,81 @@
 <div ng-controller="account.overview.controller">
-    <header>
-        <h2>Visão geral.</h2>
-    </header>
+    <div class="overview-content">
+        <header>
+            <h2>Visão geral.</h2>
+        </header>
 
-    <form class="default">
-        <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" class="form-control" id="name" readonly>
-        </div>
+        <form class="default">
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Nome</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.name}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="email" readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">E-mail</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.email}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="email">Sexo</label>
-            <input type="email" class="form-control" id="email" readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Sexo</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.gender}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="cep">Data de Nascimento</label>
-            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Data de Nascimento</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.birthdate.day}}/{{profile.birthdate.month}}/{{profile.birthdate.year}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="cep">Número do Celular</label>
-            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">CPF</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.identity.cpf}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="cep">Modelo do Celular</label>
-            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Número de Celular</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.mobile.number}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="cep">CEP</label>
-            <input type="text" class="form-control" name="cep" id="cep" ng-model="fields.cep" ui-br-cep-mask readonly>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Modelo do Celular</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.mobile.brand}}</p>
+                </div>
+            </div>
 
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">CEP</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.postal}}</p>
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label for="country">País</label>
-            <select class="form-control" id="country" name="country">
-                <option value="br" selected="selected">Brasil</option>
-            </select>
-        </div>
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">País</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.country}}</p>
+                </div>
+            </div>
+        </form>
+    </div>
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Por favor, mandem recomendações no meu e-mail
-                <span class="control-indicator"></span>
-            </label>
-        </div>
+    <div class="overview-business">
+        <header>
+            <h2>Criar meu negócio.</h2>
+            <span>No Blyp, você pode criar seu negócio e aumentar a sua visualização na internet, a qualquer hora. Sem restrições. Sem custo.</span>
+        </header>
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox"> Por favor, mandem blyps no meu celular
-                <span class="control-indicator"></span>
-            </label>
-        </div>
-
-        <div class="form-group actions">
-            <button type="reset" class="btn btn-reset">Cancelar</button>
-            <button type="submit" class="btn btn-submit">Salvar</button>
-        </div>
-    </form>
+        <a href="/business/create" class="button gold">Criar agora, de graça!</a>
+    </div>
 </div>

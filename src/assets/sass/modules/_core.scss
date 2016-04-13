@@ -69,6 +69,13 @@ a {
   background: transparent;
 }
 
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 nav {
 
   .pagination {

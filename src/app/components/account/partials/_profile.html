@@ -23,6 +23,11 @@
         </div>
 
         <div class="form-group">
+            <label for="profile_identity_cpf">CPF</label>
+            <input type="text" class="form-control" id="profile_identity_cpf" name="profile[identity][cpf]" ng-model="profile.identity.cpf" ui-br-cpf-mask>
+        </div>
+
+        <div class="form-group">
             <label for="profile_birthdate">Data de Nascimento</label>
             <div id="profile_birthdate" class="bootstrap-date row">
                 <div class="col-xs-4">

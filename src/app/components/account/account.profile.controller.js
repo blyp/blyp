@@ -17,6 +17,9 @@ app.controller('account.profile.controller', [
         name : 'Leonardo Moreira',
         email : 'eu@leonardomoreira.com.br',
         gender : 'M',
+        identity : {
+            cpf : '111.333.777-00'
+        },
         birthdate : {
             day : '19',
             month : '9',
@@ -33,5 +36,6 @@ app.controller('account.profile.controller', [
             mobile : false
         }
     };
+
 }]);
 

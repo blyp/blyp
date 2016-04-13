@@ -148,5 +148,58 @@ div#account {
         display: none;
       }
     }
+
+    .overview-content {
+
+      .form-group {
+        margin-bottom: 0;
+
+        label {
+          margin-bottom: 0;
+        }
+
+        .form-control-static {
+          padding: 0;
+        }
+
+        @media (max-width: $screen-md) {
+
+          label {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    .overview-business {
+
+      header {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        h2 {
+          margin-bottom: 10px;
+        }
+
+        span {
+          font-size: $font-large;
+          line-height: 28px;
+        }
+
+        @media (max-width: $screen-md) {
+          display: block;
+        }
+      }
+
+      a {
+        width: 40%;
+        margin: 0 auto;
+        font-size: $font-large;
+
+        @media (max-width: $screen-md) {
+          width: 100%;
+        }
+      }
+    }
   }
 }
