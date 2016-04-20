@@ -3,12 +3,6 @@
 @import "_forms";
 @import "_icons";
 
-// Screens size
-$screen-xs : 480px;
-$screen-sm : 768px;
-$screen-md : 992px;
-$screen-lg : 1200px;
-
 // Theme Core
 body {
   background: $white;
@@ -42,13 +36,18 @@ a {
       color: $dark-med;
 
       &:hover {
-        color: $gold;
+        background: $gold;
       }
     }
 
     &.black {
-      background: $dark-med;
+      background: transparent;
+      border: 2px solid $dark-med;
       color: $white;
+
+      &:hover {
+        background: $dark-med;
+      }
     }
   }
 }
@@ -68,6 +67,13 @@ a {
 
 .nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
   background: transparent;
+}
+
+.row-no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 nav {

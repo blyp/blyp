@@ -1,6 +1,7 @@
 var app = angular.module('blyp', [
     'core.routes',
     'ui.bootstrap',
+    'ui.utils.masks',
     'pathgather.popeye',
     'ngAnimate'
 ]);
@@ -79,6 +80,7 @@ app.run([
     function ($rootScope, $location) {
 
         $rootScope.path = $location.path();
+        $rootScope._ = _;
 
         //$rootScope.path = false;
 

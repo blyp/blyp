@@ -75,10 +75,9 @@ header.main {
             line-height: 22px;
 
             i {
-              -webkit-transform: rotateX(0deg);
-              -ms-transform: rotateX(0deg);
-              -o-transform: rotateX(0deg);
-              transform: rotateX(0deg);
+              -webkit-transition: transform .2s;
+              -o-transition: transform .2s;
+              transition: transform .2s;
               vertical-align: bottom;
               margin: 0px 15px 0 5px;;
             }

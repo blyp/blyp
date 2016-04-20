@@ -1,0 +1,20 @@
+<div ng-controller="account.comments.controller">
+    <header>
+        <h2>Comentários. <span class="badge">3</span></h2>
+    </header>
+
+    <div class="comments-content">
+        <ul class="lists">
+            <li class="item" ng-repeat="comment in comments">
+                <figure>
+                    <div class="img img-circle" ng-style="{ 'background-image' : 'url({{comment.article.image}})' }"></div>
+                </figure>
+
+                <div class="info">
+                    <p>"{{comment.text}}"</p>
+                    <span>Comentado em <b>{{comment.date}}</b> no artigo <a href="{{comment.article.url}}">{{comment.article.title}}</a></span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

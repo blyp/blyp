@@ -1,0 +1,81 @@
+<div ng-controller="account.overview.controller">
+    <div class="overview-content">
+        <header>
+            <h2>Visão geral.</h2>
+        </header>
+
+        <form class="default">
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Nome</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.name}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">E-mail</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.email}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Sexo</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.gender}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Data de Nascimento</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.birthdate.day}}/{{profile.birthdate.month}}/{{profile.birthdate.year}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">CPF</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.identity.cpf}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Número de Celular</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.mobile.number}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">Modelo do Celular</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.mobile.brand}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">CEP</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.postal}}</p>
+                </div>
+            </div>
+
+            <div class="form-group row-no-padding">
+                <label class="col-sm-4 control-label">País</label>
+                <div class="col-sm-8">
+                    <p class="form-control-static">{{profile.country}}</p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="overview-business">
+        <header>
+            <h2>Criar meu negócio.</h2>
+            <span>No Blyp, você pode criar seu negócio e aumentar a sua visualização na internet, a qualquer hora. Sem restrições. Sem custo.</span>
+        </header>
+
+        <a href="/business/create" class="button gold">Criar agora, de graça!</a>
+    </div>
+</div>

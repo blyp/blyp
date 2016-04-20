@@ -1,0 +1,38 @@
+<div id="account" page="account">
+
+    <div class="container container-submenu visible-sm visible-xs">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="btn-group-inverse">
+                    <button type="button" class="btn btn-submenu dropdown-toggle" data-toggle="dropdown">
+                        <i class="material-icons">{{active.icon}}</i> {{active.title}} <i class="material-icons expand-more">expand_more</i>
+                    </button>
+
+                    <account-nav class="dropdown-menu col-md-12" role="menu"> </account-nav>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container container-main wrapping">
+        <div class="row">
+            <div class="menu col-md-4 hidden-sm hidden-xs">
+                <header>
+                    <h1>Conta.</h1>
+                </header>
+
+                <account-nav class="nav nav-pills nav-stacked"> </account-nav>
+            </div>
+            <!-- /nav -->
+
+            <div class="content col-md-8" ng-include src="'views/account/partials/_' + alias + '.html'"> </div>
+            <!-- /content -->
+
+        </div>
+    </div>
+    <!-- /main -->
+
+</div>
+<!-- /account -->

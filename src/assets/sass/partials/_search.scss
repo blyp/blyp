@@ -172,6 +172,13 @@ div#search {
         width: 33%;
         display: inline-block;
         font-weight: 700;
+        background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"><style type="text/css">.st0{fill:#181818}.st1{fill:none}</style><path class="st0" d="M16.6,8.6L12,13.2L7.4,8.6L6,10l6,6l6-6L16.6,8.6z"/><path class="st1" d="M0,0h24v24H0V0z"/></svg>');
+        background-position: right 12px center;
+        background-repeat: no-repeat;
+        background-size: 21px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         @include box-shadow(0 0 0 0 rgba(0,0,0,0));
 
         @media (max-width: $screen-lg) {

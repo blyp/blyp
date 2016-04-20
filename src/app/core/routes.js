@@ -32,6 +32,48 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'article.tags.controller'
         })
 
+        .when('/account', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'overview'
+        })
+
+        .when('/account/profile', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'profile'
+        })
+
+        .when('/account/change-password', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'password'
+        })
+
+        .when('/account/coupons', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'coupons'
+        })
+
+        .when('/account/bookmarks', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'bookmarks'
+        })
+
+        .when('/account/comments', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'comments'
+        })
+
+        .when('/account/favorites', {
+            templateUrl : 'views/account/account.html',
+            controller  : 'account.controller',
+            alias : 'favorites'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
