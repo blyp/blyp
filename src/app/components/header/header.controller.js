@@ -54,4 +54,16 @@ app.controller('header.controller', [
             });
         }
     };
+
+    $scope.search = {
+
+        fields : {
+            "type" : null,
+            "place" : null
+        },
+
+        submit : function() {
+            $location.path('/search');
+        }
+    };
 }]);

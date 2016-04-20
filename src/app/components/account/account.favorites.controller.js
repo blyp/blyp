@@ -13,5 +13,35 @@ app.controller('account.favorites.controller', [
 
     var base = angular.element("#account");
 
+    $scope.share = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/share/share.html",
+                controller: "share.controller",
+                modalClass: "share-modal"
+            });
+        }
+    };
+
+    $scope.directions = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/directions/directions.html",
+                controller: "directions.controller",
+                modalClass: "directions-modal"
+            });
+        }
+    };
+
 }]);
 

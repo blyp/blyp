@@ -1,34 +1,44 @@
 <div ng-controller="account.favorites.controller">
     <header>
-        <h2>Recomendações.</h2>
+        <h2>Favoritos. <span class="badge">4</span></h2>
     </header>
 
-    <form class="default">
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-            <p class="help-block">Example block-level help text here.</p>
-        </div>
+    <div class="favorites-content">
+        <ul class="lists">
+            <li class="item" ng-repeat="i in [1,2,3,4,5]">
+                <figure>
+                    <img src="https://static.festisite.com/static/partylogo/img/logos/burger-king.png" alt="">
+                </figure>
 
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
+                <div class="info">
+                    <header>
+                        <h3><a href="#">Nome da Empresa</a></h3>
+                        <h4><a href="#">Categoria da Empresa</a></h4>
+                    </header>
 
-        <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <input type="file" id="exampleInputFile">
-            <p class="help-block">Example block-level help text here.</p>
-        </div>
+                    <p class="address">Endereço da Empresa</p>
+                    <p class="city">Curitiba/PR</p>
+                    <p class="phone">(41) 3000-4000</p>
+                </div>
 
-        <div class="form-group">
-            <label for="exampleInputFile">File input</label>
-            <p class="form-control-static">email@example.com</p>
-        </div>
+                <div class="actions">
+                    <div class="row">
+                        <div class="column">
+                            <span class="box icon print"><i class="material-icons">print</i></span>
+                            <span class="box icon favorite"><i class="material-icons">favorite</i></span>
+                            <span class="box icon share" ng-click="share.open()"><i class="material-icons">share</i></span>
+                        </div>
 
-        <div class="form-group actions">
-            <button type="reset" class="btn btn-reset">Cancelar</button>
-            <button type="submit" class="btn btn-submit">Salvar</button>
-        </div>
-    </form>
+                        <div class="column">
+                            <span class="box route" ng-click="directions.open()"><i class="material-icons">explore</i> Gerar Trajeto</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a class="button gold more" href=""><i class="material-icons">info</i> Mais Detalhes</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>

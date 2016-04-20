@@ -361,4 +361,184 @@ div#account {
       }
     }
   }
+
+  .favorites-content {
+
+    .lists {
+      width: 100%;
+
+      .item {
+        display: table;
+        width: 100%;
+        border-bottom: 1px dashed $light-med;
+        padding: 20px 0;
+        clear: both;
+
+        figure {
+          display: table-cell;
+          width: 130px;
+
+          img {
+            width: 110px;
+            height: 110px;
+          }
+
+          @media (max-width: $screen-sm) {
+            width: 100px;
+
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+
+        .info {
+          display: table-cell;
+          vertical-align: top;
+
+          header {
+            margin-bottom: 15px;
+
+            h3 {
+              font-weight: 700;
+              font-size: $font-large;
+              margin-bottom: 5px;
+
+              a:hover {
+                color: $gold;
+              }
+            }
+
+            h4 {
+              font-size: $font-small;
+
+              a:hover {
+                color: $gold;
+              }
+            }
+          }
+
+          p {
+            font-size: $font-small;
+            margin-bottom: 5px;
+          }
+
+          .phone {
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: $font-large;
+          }
+        }
+
+        .actions {
+          display: table-cell;
+          vertical-align: top;
+          width: 300px;
+
+          .row {
+            margin: 0;
+            height: 55px;
+
+            .column {
+              display: inline-block;
+              width: 150px;
+
+              .box {
+                background: $light-med;
+                width: 100%;
+                padding: 10px;
+                line-height: 24px;
+                display: inline-block;
+                vertical-align: text-top;
+                font-size: $font-small;
+                font-weight: 700;
+                @include border-radius(4px);
+
+                i {
+                  vertical-align: bottom;
+                  margin-right: 5px;
+                }
+
+                &.icon {
+                  width: auto;
+                  cursor: pointer;
+
+                  i {
+                    margin: 0;
+                  }
+                }
+
+                &.price {
+
+                  ul {
+                    float: right;
+
+                    li {
+                      float: left;
+
+                      i {
+                        color: $light-dark;
+                        margin: 0;
+                      }
+
+                      &.active {
+
+                        i {
+                          color: $dark-med;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &.route {
+                  cursor: pointer;
+                }
+
+                &.opened {
+                  background: $green;
+                  color: $white;
+                  text-transform: uppercase;
+                }
+
+                &.closed {
+                  background: $red;
+                  color: $white;
+                  text-transform: uppercase;
+                }
+              }
+
+              &:first-child {
+                float: left;
+              }
+
+              &:last-child {
+                float: right;
+                width: 140px;
+                margin-left: 10px;
+              }
+            }
+          }
+
+          a.button {
+            margin-top: 5px;
+            line-height: 24px;
+
+            i {
+              vertical-align: top;
+            }
+          }
+
+          @media (max-width: $screen-sm) {
+            display: none;
+          }
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
 }
