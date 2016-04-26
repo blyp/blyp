@@ -1,0 +1,98 @@
+//Contact
+div#contact {
+
+  .container {
+
+    header {
+      margin-bottom: 5px;
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @media (max-width: $screen-sm) {
+          font-size: 36px;
+        }
+      }
+
+      h2 {
+        font-size: 24px;
+        line-height: 28px;
+        font-weight: 400;
+
+        @media (max-width: $screen-sm) {
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    form {
+
+      textarea {
+        height: 170px;
+        max-height: 170px;
+      }
+    }
+
+    .online {
+
+      header {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .offline {
+    background: $light;
+    padding: 40px 0 0 0;
+
+    .container {
+
+      .row {
+
+        header {
+          margin-bottom: 15px;
+
+          h3 {
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+
+        .info {
+          margin-bottom: 40px;
+
+          .people {
+            font-size: $font-large;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+
+          .general {
+            font-size: $font-large;
+            margin-bottom: 15px;
+          }
+
+          span {
+            display: block;
+            margin-bottom: 5px;
+
+            a {
+              margin: 2px 0;
+
+              &:hover {
+                color: $gold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: $screen-sm) {
+      padding: 40px 40px 0 40px;
+    }
+  }
+}

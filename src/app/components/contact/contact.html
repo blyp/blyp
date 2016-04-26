@@ -1,0 +1,137 @@
+<div id="contact" page="contact">
+
+    <div class="container wrapping">
+        <div class="row">
+            <div class="col-md-8">
+                <header>
+                    <h1>Fale com a gente.</h1>
+                    <h2>Se você tem alguma dúvida e está procurando por assistência, ou apenas quer compartilhar sua experiência com o blyp, entre em contato:</h2>
+                </header>
+            </div>
+        </div>
+    </div>
+
+    <div class="offline">
+        <div class="container wrapping">
+            <div class="row">
+                <div class="col-md-4">
+                    <header>
+                        <h3>Marketing & PR</h3>
+                    </header>
+
+                    <div class="info">
+                        <p class="general">Para marketing ou imprensa, entre em contato com:</p>
+                        <span class="phone">+55 61 0000-000</span>
+                        <span class="email"><a href="mailto:thiago.covolo@blyp.com.br">mkt@blyp.com.br</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <header>
+                        <h3>Business Development</h3>
+                    </header>
+
+                    <div class="info">
+                        <p class="general">Gerenciamento de negócios, vendas e comercial, entre em contato com:</p>
+                        <span class="phone">+55 43 0000-000</span>
+                        <span class="email"><a href="mailto:fellipe.covolo@blyp.com.br">sales@blyp.com.br</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <header>
+                        <h3>TI</h3>
+                    </header>
+
+                    <div class="info">
+                        <p class="general">Envie sua sugestão e experiência sobre o nosso site.</p>
+                        <span class="phone">+55 43 0000-000</span>
+                        <span class="email"><a href="mailto:developer@blyp.com.br">developer@blyp.com.br</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <header>
+                        <h3>Blyp em Brasília</h3>
+                    </header>
+
+                    <div class="info">
+                        <p class="general">SQHI n. 171, Bairro dos Políticos - Brasília/DF</p>
+                        <span class="phone">+55 61 0000-000</span>
+                        <span class="email"><a href="mailto:thiago.covolo@blyp.com.br">bsb@blyp.com.br</a></span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <header>
+                        <h3>Blyp em Curitiba</h3>
+                    </header>
+
+                    <div class="info">
+                        <p class="general">Rua do Escritório do Blyp, n. 171, Bairro dos Ricos - Curitiba/PR</p>
+                        <span class="phone">+55 43 0000-000</span>
+                        <span class="email"><a href="mailto:fellipe.covolo@blyp.com.br">ctb@blyp.com.br</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container wrapping">
+        <div class="online row">
+            <div class="col-md-8">
+                <header>
+                    <h2>Ou entre em contato através do formulário abaixo, responderemos o mais breve possível.</h2>
+                </header>
+
+                <form class="default">
+                    <div class="form-group">
+                        <label for="contact_name">Nome</label>
+                        <input type="text" class="form-control" id="contact_name" name="contact[name]" ng-model="contact.name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_email">E-mail</label>
+                        <input type="email" class="form-control" id="contact_email" name="contact[email]" ng-model="contact.email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_phone">Número de Telefone</label>
+                        <input type="text" class="form-control" name="contact[phone]" id="contact_phone" ng-model="contact.phone" ui-br-phone-number>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_company">Empresa</label>
+                        <input type="text" class="form-control" name="contact[company]" id="contact_company" ng-model="contact.company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_subject">Como podemos ajuda você?</label>
+                        <select id="contact_subject" name="contact[subject]" class="form-control" ng-model="contact.subject">
+                            <option value="" selected>Por favor, escolha</option>
+                            <option value="Android">Produtos e Serviços</option>
+                            <option value="Symbian">Como anunciar?</option>
+                            <option value="Suporte para usuário">Suporte para usuário</option>
+                            <option value="Suporte para empresa">Suporte para empresa</option>
+                            <option value="Termos de Uso">Termos de Uso</option>
+                            <option value="Sugestões e Críticas">Sugestões e Críticas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact_message">Mensagem</label>
+                        <textarea class="form-control" name="contact[message]" id="contact_message" ng-model="contact.message"></textarea>
+                    </div>
+
+                    <div class="form-group actions">
+                        <button type="submit" class="btn btn-submit">Enviar E-mail</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /contact -->
