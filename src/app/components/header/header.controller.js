@@ -6,7 +6,8 @@ app.controller('header.controller', [
     '$routeParams',
     '$route',
     '$filter',
-    'Popeye', function($scope, $rootScope, $location, $window, $routeParams, $route, $filter, Popeye) {
+    'auth',
+    'Popeye', function($scope, $rootScope, $location, $window, $routeParams, $route, $filter, auth, Popeye) {
 
     console.log("Header");
 
@@ -20,8 +21,22 @@ app.controller('header.controller', [
             Popeye.openModal({
                 templateUrl: "views/login/login.html",
                 controller: "login.controller",
-                modalClass: "login-modal"
+                modalClass: "login-modal",
+                resolve : {
+                    target : function() {
+                        return false;
+                    }
+                }
             });
+        }
+    };
+
+    $scope.logout =  {
+
+        die : function() {
+
+            if (auth.logout())
+                $window.location.reload();
         }
     };
 

@@ -3,7 +3,8 @@ var app = angular.module('blyp', [
     'ui.bootstrap',
     'ui.utils.masks',
     'pathgather.popeye',
-    'ngAnimate'
+    'ngAnimate',
+    'ngCookies'
 ]);
 
 var socket = {};
