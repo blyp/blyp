@@ -1,23 +1,21 @@
-app.directive(
-    "headerView",
-    function() {
+app.directive('headerView',[
+    'auth',
+    function(auth) {
 
-        var isLogged = function() {
+    var isLogged = function() {
 
-            if (_.isEmpty(window.app.Session)) {
-                console.log("1");
-                return "views/header/header.logged.html";
-            }
+        if ( ! auth.check()) {
+            return "views/header/header.html";
+        }
 
-            return "views/header/header.logged.html";
-        };
+        return "views/header/header.logged.html";
+    };
 
-        return({
-            controller: "header.controller",
-            restrict: "AE",
-            replace: true,
-            templateUrl: isLogged()
-        });
+    return({
+        controller: "header.controller",
+        restrict: "AE",
+        replace: true,
+        templateUrl: isLogged()
+    });
 
-    }
-);
+}]);

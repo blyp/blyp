@@ -35,43 +35,85 @@ angular.module('core.routes', ['ngRoute']).config([
         .when('/account', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'overview'
+            alias : 'overview',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/profile', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'profile'
+            alias : 'profile',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/change-password', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'password'
+            alias : 'password',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/coupons', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'coupons'
+            alias : 'coupons',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/bookmarks', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'bookmarks'
+            alias : 'bookmarks',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/comments', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'comments'
+            alias : 'comments',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/account/favorites', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',
-            alias : 'favorites'
+            alias : 'favorites',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .otherwise({ redirectTo: '/' });

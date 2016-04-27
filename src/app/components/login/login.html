@@ -5,7 +5,7 @@
         </header>
 
         <ul>
-            <li><a href="javascript:void(0)" ng-click=""><span><i class="symbol">circlefacebook</i></span> Facebook</a></li>
+            <li><a href="javascript:void(0)" ng-click="login.auth()"><span><i class="symbol">circlefacebook</i></span> Facebook</a></li>
         </ul>
     </div>
 
@@ -27,7 +27,7 @@
             </li>
 
             <li>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" ng-click="login.auth()">Login</button>
                 <span>Não possui uma conta? <a href="javascript:void(0)" ng-click="register.open()">Cadastre-se.</a></span>
             </li>
         </ul>
