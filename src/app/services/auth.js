@@ -98,27 +98,6 @@ app.factory('auth', function ($http, $cookies, $location, Popeye) {
             return true;
 
         return false;
-
-        //var req = {
-        //    url : API.HOST + service + "/logout/" + API.FORMAT,
-        //    method : "POST",
-        //    headers : {
-        //        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
-        //    },
-        //    data : {
-        //        api_key : API.KEY,
-        //        id : Cookies.get("blyp.com.br")
-        //    }
-        //};
-        //
-        //$http(req).then(function(){
-        //
-        //    window.app.Session = {};
-        //    Cookies.remove("blyp.com.br");
-        //
-        //    return window.app.Session;
-        //});
-
     };
 
     return factory;

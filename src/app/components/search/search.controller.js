@@ -14,9 +14,11 @@ app.controller('search.controller', [
 
     var base = angular.element("#search");
 
-    geo.get();
-
     $scope.maps = {
+
+        pullLocation : function() {
+            return geo.get();
+        },
 
         pullCenter : function() {
             return "Curtiba, PR";
@@ -94,6 +96,8 @@ app.controller('search.controller', [
             });
         }
     };
+
+    $scope.maps.pullLocation();
 
 }]);
 
