@@ -6,7 +6,8 @@ app.controller('home.controller', [
     '$timeout',
     '$filter',
     '$window',
-    '$http', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http) {
+    '$http',
+    '$httpParamSerializer', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, $httpParamSerializer) {
 
     console.log("Home");
 
@@ -94,14 +95,14 @@ app.controller('home.controller', [
     $scope.search = {
 
         fields : {
-            "type" : null,
-            "place" : null
+            q : null,
+            place : null
         },
 
         init : function() {
 
-            if (this.fields.type !== null)
-                this.results(this.fields.type.length);
+            if (this.fields.q !== null)
+                this.results(this.fields.q.length);
         },
 
         results : function(i) {
@@ -117,7 +118,7 @@ app.controller('home.controller', [
         },
 
         submit : function() {
-            $location.path('/search');
+            $location.path('/search').search($httpParamSerializer(this.fields));
         }
     };
 

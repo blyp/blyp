@@ -30,7 +30,7 @@ app.controller('login.controller', [
 
             if (auth.set(user)) {
 
-                (target) ? $window.location.href = target : $window.location.reload();
+                if (target) { $window.location.href = target; } else { $window.location.reload(); }
             }
         },
 
