@@ -6,8 +6,9 @@ app.controller('header.controller', [
     '$routeParams',
     '$route',
     '$filter',
+    '$httpParamSerializer',
     'auth',
-    'Popeye', function($scope, $rootScope, $location, $window, $routeParams, $route, $filter, auth, Popeye) {
+    'Popeye', function($scope, $rootScope, $location, $window, $routeParams, $route, $filter, $httpParamSerializer, auth, Popeye) {
 
     console.log("Header");
 
@@ -73,12 +74,12 @@ app.controller('header.controller', [
     $scope.search = {
 
         fields : {
-            "type" : null,
+            "q" : null,
             "place" : null
         },
 
         submit : function() {
-            $location.path('/search');
+            $location.path('/search').search($httpParamSerializer(this.fields));
         }
     };
 }]);
