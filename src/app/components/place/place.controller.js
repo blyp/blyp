@@ -1,4 +1,4 @@
-app.controller('directions.controller', [
+app.controller('place.controller', [
     '$scope',
     '$location',
     '$routeParams',
@@ -9,15 +9,9 @@ app.controller('directions.controller', [
     '$http',
     'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
 
-    console.log("Directions");
+    console.log("Place");
 
-    var base = angular.element(".directions");
+    var base = angular.element("#place");
 
-    $scope.share = {
-
-        close : function() {
-            Popeye.closeCurrentModal();
-        }
-    };
 
 }]);

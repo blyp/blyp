@@ -17,7 +17,13 @@ app.controller('search.controller', [
     $scope.maps = {
 
         pullLocation : function() {
-            return geo.get();
+
+            var location = geo.get();
+
+            if (location !== false)
+                return JSON.parse(location);
+
+            return false;
         },
 
         pullCenter : function() {
@@ -97,7 +103,7 @@ app.controller('search.controller', [
         }
     };
 
-    $scope.maps.pullLocation();
+    $scope.location = $scope.maps.pullLocation();
 
 }]);
 

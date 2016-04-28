@@ -328,6 +328,7 @@ div#home {
       @include border-radius(4px);
 
       &.place {
+        cursor: pointer;
         padding: 20px;
         color: $white;
         background-color: transparent;

@@ -49,35 +49,35 @@ app.controller('home.controller', [
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         }
     ];
 
@@ -119,6 +119,13 @@ app.controller('home.controller', [
 
         submit : function() {
             $location.path('/search').search($httpParamSerializer(this.fields));
+        }
+    };
+
+    $scope.place = {
+
+        go : function(url) {
+            $location.path(url);
         }
     };
 

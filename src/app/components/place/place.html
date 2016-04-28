@@ -1,0 +1,73 @@
+<div id="place" page="place">
+
+    <div class="container wrapping">
+        <div class="row">
+            <div id="content" class="content col-md-8">
+                <div class="result">
+                    <p>15 resultado(s) <em>para</em> <strong>"tag, tag"</strong></p>
+                    <span ng-click="feedback.open()">Avalie este resultado</span>
+                </div>
+                <!-- /result -->
+
+            </div>
+            <!-- /place -->
+
+            <div id="sidebar" class="sidebar col-md-4">
+                <div class="maps">
+                    <header>
+                        <h2><i class="material-icons">map</i> Mapa e Direção</h2>
+                    </header>
+
+                    <a href="#" ng-style="{ 'background-image' : 'url({{maps.source()}})' }">
+                        <img src="{{maps.source()}}" alt="">
+                    </a>
+                </div>
+
+                <div class="most-viewed">
+                    <header>
+                        <h2><i class="material-icons">visibility</i> Buscas Relacionadas</h2>
+                    </header>
+
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5]">
+                            <header>
+                                <h3><a href="#">Nome da Empresa</a></h3>
+                            </header>
+
+                            <p class="address">Endereço da Empresa</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="similar-nearby">
+                    <header>
+                        <h2><i class="material-icons">store</i> Lugares Similares</h2>
+                    </header>
+
+                    <ul>
+                        <li ng-repeat="i in [1,2,3,4,5]">
+                            <header>
+                                <h3><a href="#">Nome da Empresa</a></h3>
+                            </header>
+
+                            <p class="address">Endereço da Empresa</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /sidebar -->
+
+        </div>
+    </div>
+
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('content'),
+            'menu': document.getElementById('sidebar'),
+            'padding': window.innerWidth - 40,
+            'tolerance': 100,
+            'side': 'right'
+        });
+    </script>
+</div>
+<!-- /search -->
