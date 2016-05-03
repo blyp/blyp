@@ -3,16 +3,15 @@
     <div class="container wrapping">
         <div class="row">
             <div id="content" class="content col-md-8">
-                <div class="result">
-                    <p>15 resultado(s) <em>para</em> <strong>"tag, tag"</strong></p>
-                    <span ng-click="feedback.open()">Avalie este resultado</span>
-                </div>
-                <!-- /result -->
 
             </div>
             <!-- /place -->
 
             <div id="sidebar" class="sidebar col-md-4">
+                <div class="find">
+                    <a href="/search?q=restaurantes" class="button blue"><i class="material-icons">search</i> Encontre outros restaurantes em Curitiba/PR</a>
+                </div>
+
                 <div class="maps">
                     <header>
                         <h2><i class="material-icons">map</i> Mapa e Direção</h2>
@@ -21,6 +20,86 @@
                     <a href="#" ng-style="{ 'background-image' : 'url({{maps.source()}})' }">
                         <img src="{{maps.source()}}" alt="">
                     </a>
+                </div>
+
+                <div class="ad-view">
+                    <header>
+                        <h2><i class="material-icons">alarm</i> Funcionamento</h2>
+                    </header>
+
+                </div>
+
+                <div class="payments-available">
+                    <header>
+                        <h2><i class="material-icons">monetization_on</i> Formas de Pagamento</h2>
+                    </header>
+
+                    <p>Dinheiro, cheque, cartão de débito e cartão de crédito.</p>
+
+                    <p>Bandeiras disponíveis para cartões:</p>
+
+                    <ul class="cards">
+                        <li><i class="pw pw-mastercard"></i></li>
+                        <li><i class="pw pw-visa"></i></li>
+                        <li><i class="pw pw-diners"></i></li>
+                        <li><i class="pw pw-jcb"></i></li>
+                    </ul>
+                </div>
+
+                <div class="pictures-oficial">
+                    <header>
+                        <h2><i class="material-icons">panorama</i> Fotos Oficiais</h2>
+                    </header>
+
+                    <div class="owl-carousel owl-theme">
+                        <div id="owl-pictures-oficial">
+                            <div class="item" ng-repeat="item in pictures.oficial">
+                                <figure ng-style="{ 'background-image' : 'url({{item.picture}})' }">
+                                    <img src="{{item.picture}}" alt="{{item.picture}}">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pictures-clients">
+                    <header>
+                        <h2><i class="material-icons">photo_camera</i> Fotos de Clientes</h2>
+                    </header>
+
+                    <div class="owl-carousel owl-theme">
+                        <div id="owl-pictures-clients">
+                            <div class="item" ng-repeat="item in pictures.clients">
+                                <figure ng-style="{ 'background-image' : 'url({{item.picture}})' }">
+                                    <img src="{{item.picture}}" alt="{{item.picture}}">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="newsletter">
+                    <header>
+                        <h2><i class="material-icons">info</i> Ofertas perto de você!</h2>
+                    </header>
+
+                    <p>Informe o seu e-mail e receba promoções imperdíveis.</p>
+
+                    <form class="search" role="search">
+                        <ul>
+                            <li><input type="text" class="form-control email" placeholder="Seu e-mail"> <button type="submit" class="btn" >Enviar</button></li>
+                        </ul>
+                    </form>
+                </div>
+
+                <div class="ad-view">
+                    <header>
+                        <h2><i class="material-icons">volume_up</i> Publicidade</h2>
+                    </header>
+
+                    <figure>
+                        <a href="{{ad.url}}"><img class="img-responsive" src="{{ad.picture}}" alt="" /></a>
+                    </figure>
                 </div>
 
                 <div class="most-viewed">

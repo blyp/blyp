@@ -492,6 +492,7 @@ div#home {
             border: 10px solid $light;
             width: 220px;
             height: 220px;
+            margin: 0 auto;
           }
 
           figcaption {
@@ -536,6 +537,10 @@ div#home {
           margin: 0 auto;
           width: 45%;
         }
+      }
+
+      .owl-dot {
+        margin-top: 40px;
       }
     }
 
@@ -594,6 +599,7 @@ div#home {
             @include border-radius(50%);
             width: 120px;
             height: 120px;
+            margin: 0 auto;
           }
 
           figcaption {
@@ -637,6 +643,10 @@ div#home {
           width: 90%;
           margin: 0 auto;
         }
+      }
+
+      .owl-dot {
+        margin-top: 40px;
       }
     }
 
