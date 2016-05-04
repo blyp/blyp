@@ -302,11 +302,8 @@ div#place {
         margin-right: 5px;
 
         i {
+          color: $dark;
           font-size: 28px;
-        }
-
-        &:last-child {
-          margin: 0;
         }
       }
     }
