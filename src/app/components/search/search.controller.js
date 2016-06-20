@@ -7,13 +7,18 @@ app.controller('search.controller', [
     '$filter',
     '$window',
     '$http',
-    'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
+    'geo',
+    'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, geo, Popeye) {
 
     console.log("Search");
 
     var base = angular.element("#search");
 
     $scope.maps = {
+
+        pullLocation : function() {
+            return geo.get();
+        },
 
         pullCenter : function() {
             return "Curtiba, PR";
@@ -91,6 +96,8 @@ app.controller('search.controller', [
             });
         }
     };
+
+    $scope.maps.pullLocation();
 
 }]);
 
