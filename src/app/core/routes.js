@@ -128,6 +128,16 @@ angular.module('core.routes', ['ngRoute']).config([
             }
         })
 
+        .when('/contact', {
+            templateUrl : 'views/contact/contact.html',
+            controller  : 'contact.controller'
+        })
+
+        .when('/terms', {
+            templateUrl : 'views/terms/terms.html',
+            controller  : 'terms.controller'
+        })
+
         .otherwise({ redirectTo: '/' });
 
 }]);
