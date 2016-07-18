@@ -49,6 +49,17 @@ a {
         background: $dark-med;
       }
     }
+
+    &.blue {
+      background: $blue;
+      border: 2px solid $blue;
+      color: $white;
+
+      &:hover {
+        background: transparent;
+        color: $blue;
+      }
+    }
   }
 }
 

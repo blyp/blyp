@@ -44,6 +44,16 @@ angular.module('core.routes', ['ngRoute']).config([
             controller  : 'article.tags.controller'
         })
 
+        .when('/place/:slug', {
+            templateUrl : 'views/place/place.html',
+            controller  : 'place.controller'
+        })
+
+        .when('/place/:slug/directions', {
+            templateUrl : 'views/place/place.directions.html',
+            controller  : 'place.controller'
+        })
+
         .when('/account', {
             templateUrl : 'views/account/account.html',
             controller  : 'account.controller',

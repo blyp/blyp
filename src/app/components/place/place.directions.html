@@ -1,0 +1,33 @@
+<div id="place" page="place">
+
+    <div class="container wrapping">
+        <div class="row">
+            <div id="directions" class="directions col-md-8">
+                <div class="result">
+                    <p>15 resultado(s) <em>para</em> <strong>"tag, tag"</strong></p>
+                    <span ng-click="feedback.open()">Avalie este resultado</span>
+                </div>
+                <!-- /result -->
+
+            </div>
+            <!-- /place -->
+
+            <div id="sidebar" class="sidebar col-md-4">
+
+            </div>
+            <!-- /sidebar -->
+
+        </div>
+    </div>
+
+    <script>
+        var slideout = new Slideout({
+            'panel': document.getElementById('directions'),
+            'menu': document.getElementById('sidebar'),
+            'padding': window.innerWidth - 40,
+            'tolerance': 100,
+            'side': 'right'
+        });
+    </script>
+</div>
+<!-- /search -->

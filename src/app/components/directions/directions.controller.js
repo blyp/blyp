@@ -9,9 +9,9 @@ app.controller('directions.controller', [
     '$http',
     'Popeye', function($scope, $location, $routeParams, $route, $timeout, $filter, $window, $http, Popeye) {
 
-    console.log("Share");
+    console.log("Directions");
 
-    var base = angular.element(".share-options");
+    var base = angular.element(".directions");
 
     $scope.share = {
 

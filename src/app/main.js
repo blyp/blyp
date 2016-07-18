@@ -9,21 +9,18 @@ var app = angular.module('blyp', [
 
 var socket = {};
 
-/*jshint esnext: true */
-const API = {
+var API = {
     HOST    : "http://api.blyp.com.br/",
     KEY     : "348caba53c1234487714035965ad49fb",
     VERSION : "v1",
     FORMAT  : "json"
 };
 
-/*jshint esnext: true */
-const IO = {
+var IO = {
     HOST : "http://io.blyp.com.br/"
 };
 
-/*jshint esnext: true */
-const GSTATIC = {
+var GSTATIC = {
     HOST : "https://maps.googleapis.com/maps/api/staticmap?",
     KEY : "AIzaSyCM0KLxQhBdC92YGTY0E8wp3GlpyXCtpSc",
     ZOOM : "14",

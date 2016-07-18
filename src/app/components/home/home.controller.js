@@ -49,35 +49,35 @@ app.controller('home.controller', [
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         },
         {
             "place" : "Empresa",
             "type" : "Categoria",
             "image" : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
             "approval" : "70%",
-            "url" : "/"
+            "url" : "/place/nome-da-empresa"
         }
     ];
 
@@ -122,23 +122,52 @@ app.controller('home.controller', [
         }
     };
 
+    $scope.place = {
+
+        go : function(url) {
+            $location.path(url);
+        }
+    };
+
     $scope.carousel = {
 
         articles : function() {
 
             $("#owl-articles").owlCarousel({
-                items : 3,
-                itemsDesktopSmall : [1280,2],
-                itemsTablet : [768,1]
+                nav : false,
+                loop : true,
+                responsive:{
+                    0 : {
+                        items : 1
+                    },
+                    768 : {
+                        items : 2
+                    },
+                    1280 : {
+                        items : 3,
+                        dots : false
+                    }
+                }
             });
         },
 
         viewned : function() {
 
             $("#owl-viewned").owlCarousel({
-                items : 5,
-                itemsDesktopSmall : [992,2],
-                itemsTablet : [768,1]
+                nav : false,
+                loop : true,
+                responsive:{
+                    0 : {
+                        items : 1
+                    },
+                    768 : {
+                        items : 3
+                    },
+                    1280 : {
+                        items : 5,
+                        dots : false
+                    }
+                }
             });
         }
     };
