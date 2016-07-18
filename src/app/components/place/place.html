@@ -3,7 +3,84 @@
     <div class="container wrapping">
         <div class="row">
             <div id="content" class="content col-md-8">
+                <div class="local">
+                    <header>
 
+                    </header>
+
+                    <div class="info">
+
+                    </div>
+                </div>
+
+                <div class="about">
+                    <header>
+                        <h2><i class="material-icons">info</i> Sobre</h2>
+                    </header>
+                </div>
+
+                <div class="products">
+                    <header>
+                        <h2><i class="material-icons">shopping_cart</i> Produtos e Serviços</h2>
+                    </header>
+                </div>
+
+                <div class="comments">
+                    <header>
+                        <h2><i class="material-icons">chat</i> Avaliações e Comentários</h2>
+                    </header>
+                </div>
+
+                <div class="delivery">
+                    <header>
+                        <h2><i class="material-icons">motorcycle</i> Entrega em Domicílio</h2>
+                    </header>
+                </div>
+
+                <div class="coupons">
+                    <header>
+                        <h2><i class="material-icons">local_offer</i> Cupons de Desconto</h2>
+                    </header>
+
+                    <div class="coupon" ng-repeat="i in [1,2,3]">
+                        <div class="info">
+                            <span class="tittle">Ganhe um super desconto com o Cupom {{i}}</span>
+                            <span class="reaming">Cupons restantes: 12</span>
+                        </div>
+
+                        <div class="actions">
+                            <div class="row">
+                                <div class="column">
+                                    <span class="box icon details"><i class="material-icons">info</i> + Detalhes</span>
+                                </div>
+
+                                <div class="column">
+                                    <span class="box icon save"><i class="material-icons">pan_tool</i> Eu Quero!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videos">
+                    <header>
+                        <h2><i class="material-icons">videocam</i> Vídeos</h2>
+                    </header>
+
+                    <div class="video">
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/pwbwg8HUKRA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <header>
+                        <h2><i class="material-icons">more</i> Tags</h2>
+                    </header>
+
+                    <div class="list">
+                        <a href="/search?q={{i}}" ng-repeat="i in [1,2,3]">Tag {{i}}</a>
+                    </div>
+                </div>
             </div>
             <!-- /place -->
 
@@ -22,11 +99,20 @@
                     </a>
                 </div>
 
-                <div class="ad-view">
+                <div class="schedule">
                     <header>
                         <h2><i class="material-icons">alarm</i> Funcionamento</h2>
                     </header>
 
+                    <ul>
+                        <li class="active"><i class="material-icons">keyboard_arrow_right</i> Segunda-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Terça-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quarta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quinta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sexta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sábado <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Domingo <span>14h às 22h</span></li>
+                    </ul>
                 </div>
 
                 <div class="payments-available">
@@ -43,6 +129,17 @@
                         <li><i class="pf pf-visa"></i></li>
                         <li><i class="pf pf-elo"></i></li>
                         <li><i class="pf pf-moip"></i></li>
+                    </ul>
+                </div>
+
+                <div class="downloads">
+                    <header>
+                        <h2><i class="material-icons">cloud_download</i> Arquivos para Download</h2>
+                    </header>
+
+                    <ul>
+                        <li><a href="#"><i class="material-icons">picture_as_pdf</i> Cardápio</a></li>
+                        <li><a href="#"><i class="material-icons">picture_as_pdf</i> Informações sobre Franquia</a></li>
                     </ul>
                 </div>
 
