@@ -19,6 +19,294 @@ div#place {
           margin-right: 5px;
         }
       }
+
+      &.no-dash {
+        border-top: none;
+      }
+    }
+
+    .about {
+
+      .text {
+        margin: 0 0 0 35px;
+
+        p {
+          line-height: 24px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .products {
+
+      ol {
+        margin: 0 0 0 35px;
+
+        li {
+          line-height: 24px;
+          clear: both;
+
+          &.category {
+            float: left;
+            font-weight: 700;
+            border-bottom: 2px solid $dark;
+            margin-bottom: 10px;
+          }
+
+          ol {
+            margin: 0 0 0 35px;
+
+            li {
+              clear: both;
+              border-bottom: 1px dashed $dark;
+              display: block;
+              height: 20px;
+              line-height: 14px;
+              float: none;
+
+              em {
+                float: left;
+                font-style: normal;
+                background: white;
+                padding: 7px 7px 7px 0;
+              }
+
+              span {
+                float: right;
+                background: white;
+                padding: 7px;
+              }
+
+              &:last-child {
+                margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+      }
+    }
+
+    .comments {
+
+      .write {
+        margin: 0 0 20px 35px;
+        border-bottom: 1px dashed $light-med;
+
+        p {
+          margin-bottom: 20px;
+
+          b {
+            font-weight: 700;
+          }
+        }
+
+        form.text {
+          margin-bottom: 20px;
+
+          ul {
+
+            li {
+              margin-bottom: 15px;
+
+              textarea {
+                background: $light-med;
+                min-height: 64px;
+              }
+
+              .rating {
+                float: left;
+                line-height: 36px;
+                text-transform: uppercase;
+                font-weight: 700;
+                cursor: pointer;
+
+                .like {
+                  margin-right: 15px;
+
+                  &:hover, &.active {
+                    color: $green;
+                  }
+
+                  @media (max-width: $screen-sm) {
+                    float: left;
+                    width: 50%;
+                    text-align: center;
+                  }
+                }
+
+                .unlike {
+
+                  &:hover, &.active {
+                    color: $red;
+                  }
+
+                  @media (max-width: $screen-sm) {
+                    float: right;
+                    width: 50%;
+                    text-align: center;
+                  }
+                }
+
+                i {
+                  vertical-align: top;
+                  font-size: 36px;
+                }
+              }
+
+              button {
+
+                &.right {
+                  float: right;
+                }
+
+                @media (max-width: $screen-sm) {
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          &:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+          }
+        }
+      }
+
+      .responses {
+        margin: 20px 0 0 35px;
+
+        .response {
+          clear: both;
+          margin: 0 0 40px 0;
+
+          .author {
+            margin-bottom: 10px;
+
+            figure {
+              float: left;
+              width: 34px;
+              height: 34px;
+
+              img {
+                width: 34px;
+                height: 34px;
+              }
+            }
+
+            .info {
+              float: left;
+              margin: 2px 15px;
+
+              h2 {
+                font-size: 16px;
+                font-weight: 700;
+              }
+
+              span {
+                font-size: 11px;
+                text-transform: uppercase;
+                color: $light-dark;
+              }
+            }
+
+            &:after {
+              content: ".";
+              display: block;
+              clear: both;
+              visibility: hidden;
+              line-height: 0;
+              height: 0;
+            }
+          }
+
+          p {
+            line-height: 24px;
+          }
+
+          .report {
+            margin-top: 15px;
+            font-size: $font-small;
+            font-weight: 700;
+
+            a {
+
+              &:hover {
+                color: $gold;
+              }
+            }
+
+            .abuse {
+              float: right;
+              margin-top: -8px;
+              padding: 8px;
+              cursor: pointer;
+              background: $light-med;
+              @include border-radius(4px);
+
+              &:hover {
+                color: $gold;
+              }
+            }
+          }
+
+          &:last-child {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
+
+    .delivery {
+
+      ul {
+        margin: 0 0 0 5px;
+
+        li {
+          line-height: 24px;
+          margin-left: 30px;
+          clear: both;
+
+          i {
+            display: none;
+            vertical-align: top;
+          }
+
+          span {
+            float: right;
+          }
+
+          &.active {
+            font-weight: 700;
+          }
+
+          &.active {
+            margin-left: 0;
+
+            i {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      span.nearby {
+        margin: 20px 0 20px 35px;
+        display: block;
+      }
     }
 
     .coupons {

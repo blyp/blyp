@@ -4,7 +4,7 @@
         <div class="row">
             <div id="content" class="content col-md-8">
                 <div class="local">
-                    <header>
+                    <header class="no-dash">
 
                     </header>
 
@@ -17,24 +17,104 @@
                     <header>
                         <h2><i class="material-icons">info</i> Sobre</h2>
                     </header>
+
+                    <div class="text">
+                        <p>O BK® do Shopping Curitiba foi o terceiro restaurante da marca a chegar na cidade. Dentro dos seu espaço de 200m2 é oferecida uma infraestrutura que atende, de maneira rigorosa, a todos os requisitos necessários para que o cliente possa usufruir e aproveitar um dos melhores lanches do planeta.</p>
+                        <p>A ideia de trazer o franchising para o Shopping ocorreu a partir da iniciativa dos empreendedores e socios Roberto Galvão Siqueira e Emerson Damásio Shweine, ambos com vasta experiência no mundo dos negócios, principalmente do ramo alimentício.</p>
+                    </div>
                 </div>
 
                 <div class="products">
                     <header>
                         <h2><i class="material-icons">shopping_cart</i> Produtos e Serviços</h2>
                     </header>
+
+                    <ol>
+                        <li class="category">Categoria 1</li>
+                        <li>
+                            <ol>
+                                <li class="product"><em>Produto 1</em> <span>Consultar</span></li>
+                                <li class="product"><em>Produto 2</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 3</em> <span>R$ 12,00</span></li>
+                            </ol>
+                        </li>
+
+                        <li class="category">Categoria 2</li>
+                        <li>
+                            <ol>
+                                <li class="product"><em>Produto 4</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 5</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 6</em> <span>R$ 12,00</span></li>
+                            </ol>
+                        </li>
+                    </ol>
                 </div>
 
                 <div class="comments">
                     <header>
                         <h2><i class="material-icons">chat</i> Avaliações e Comentários</h2>
                     </header>
+
+                    <div class="write">
+                        <p>Olá <b>Leonardo Moreira</b>, faça uma avaliação sobre <b>Nome da Empresa</b>:</p>
+
+                        <form class="text">
+                            <ul>
+                                <li>
+                                    <textarea class="comment default" placeholder="Escreva seu comentário."></textarea>
+                                </li>
+
+                                <li>
+                                    <div class="rating">
+                                        <span class="like"><i class="material-icons">sentiment_satisfied</i> Gostei</span>
+                                        <span class="unlike"><i class="material-icons">sentiment_dissatisfied</i> Não Gostei</span>
+                                    </div>
+
+                                    <button type="submit" class="button gold right">Enviar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div class="responses">
+                        <div class="response" ng-repeat="i in [1,2]">
+                            <div class="author">
+                                <figure>
+                                    <img class="img-circle" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira">
+                                </figure>
+
+                                <div class="info">
+                                    <h2>Leonardo Moreira</h2>
+                                    <span>10 de Março de 2016</span>
+                                </div>
+                            </div>
+
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</p>
+
+                            <div class="report">
+                                <span>Esta opinião ajudou? <a href="javascript:void(0)">Sim</a> | <a href="javascript:void(0)">Não</a></span>
+                                <span class="box abuse">Reportar Abuso</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="delivery">
                     <header>
                         <h2><i class="material-icons">motorcycle</i> Entrega em Domicílio</h2>
                     </header>
+
+                    <ul>
+                        <li class="active"><i class="material-icons">keyboard_arrow_right</i> Segunda-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Terça-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quarta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quinta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sexta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sábado <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Domingo <span>14h às 22h</span></li>
+                    </ul>
+
+                    <span class="nearby">Bairros atendidos: Batel, Cabral, Água Verde, Santa Cândida,Boa Vista, Capão Redondo.</span>
                 </div>
 
                 <div class="coupons">
