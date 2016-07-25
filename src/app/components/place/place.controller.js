@@ -13,6 +13,13 @@ app.controller('place.controller', [
 
     var base = angular.element("#place");
 
+    $scope.place = {
+        name : "Nome da Empresa",
+        slug : "nome-da-empresa",
+        logo : "https://static.festisite.com/static/partylogo/img/logos/burger-king.png",
+        banner : "http://economiaes.com/wp-content/uploads/2012/12/02g.jpg"
+    };
+
     $scope.pictures = {
 
         oficial : [
@@ -104,6 +111,21 @@ app.controller('place.controller', [
                         items : 1
                     }
                 }
+            });
+        }
+    };
+
+    $scope.share = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/share/share.html",
+                controller: "share.controller",
+                modalClass: "share-modal"
             });
         }
     };

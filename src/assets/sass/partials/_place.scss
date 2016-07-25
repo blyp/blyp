@@ -22,6 +22,181 @@ div#place {
 
       &.no-dash {
         border-top: none;
+        margin-top: 0;
+      }
+    }
+
+    .local {
+
+      header.no-dash {
+        background-color: $dark;
+        height: 290px;
+        padding: 0;
+
+        .featured-image {
+          position: relative;
+          height: 240px;
+          background-size: cover;
+          background-position: center;
+
+          span.box {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            height: 50px;
+            width: 50px;
+            background: $gold;
+            cursor: pointer;
+
+            i {
+              line-height: 50px;
+              margin: 0 7px;
+              font-size: 36px;
+            }
+
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+
+        .actions {
+          line-height: 50px;
+
+          .follow {
+            float: left;
+
+            p {
+              float: left;
+              font-size: $font-small;
+              text-transform: uppercase;
+              color: $white;
+            }
+          }
+
+          .buttons {
+            float: right;
+            margin-right: 10px;
+
+            li {
+              display: inline-block;
+            }
+          }
+
+          span.box {
+            cursor: pointer;
+            display: inline-block;
+            line-height: 1;
+
+            &.default {
+              color: $gold;
+              margin: 0 5px;
+
+              i {
+                line-height: 50px;
+              }
+
+              &:hover {
+                color: $white;
+              }
+            }
+
+            &.follow {
+              margin: 12px 10px 12px 20px;
+              background: transparent;
+              border: 2px solid $gold;
+              padding: 5px 20px;
+              color: $gold;
+              font-size: $font-small;
+              font-weight: 700;
+              text-transform: uppercase;
+              @include border-radius(4px);
+
+              &:hover {
+                background: $gold;
+                color: $dark;
+              }
+            }
+          }
+        }
+
+        @media (max-width: $screen-sm) {
+          height: 200px;
+
+          .featured-image {
+            height: 150px;
+          }
+        }
+      }
+
+      .info {
+
+        header {
+          border: none;
+
+          hgroup {
+            float: left;
+            margin-top: 10px;
+
+            h2 {
+              font-size: 36px;
+              font-weight: 300;
+              text-transform: none;
+              margin-bottom: 20px;
+            }
+
+            h3 {
+              color: $light-dark;
+              font-size: 24px;
+              font-weight: 300;
+            }
+          }
+
+          figure {
+            float: right;
+            width: 100px;
+
+            img {
+              width: 100px;
+              height: 100px;
+            }
+          }
+
+          &:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+          }
+        }
+
+        .social {
+          position: relative;
+          bottom: -38px;
+          background: transparent;
+          text-align: center;
+
+          li {
+            font-size: 42px;
+            display: inline-block;
+
+            a {
+              height: 42px;
+              width: 42px;
+              background: $white;
+              display: block;
+              border-radius: 24px;
+              line-height: 42px;
+
+              &:hover {
+                color: $gold;
+              }
+
+            }
+          }
+        }
       }
     }
 
@@ -258,7 +433,7 @@ div#place {
               @include border-radius(4px);
 
               &:hover {
-                color: $gold;
+                background: $gold;
               }
             }
           }
