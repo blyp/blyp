@@ -3,7 +3,202 @@
     <div class="container wrapping">
         <div class="row">
             <div id="content" class="content col-md-8">
+                <div class="local">
+                    <header class="no-dash">
+                        <div class="featured-image" ng-style="{ 'background-image' : 'url(http://economiaes.com/wp-content/uploads/2012/12/02g.jpg)' }">
+                            <span class="box icon favorite"><i class="material-icons">favorite</i></span>
+                        </div>
 
+                        <div class="actions">
+                            <div class="follow">
+                                <span class="box follow">Seguir</span>
+                                <p>12.432 seguidores</p>
+                            </div>
+
+                            <ul class="buttons">
+                                <li><span class="box default" ng-click="share.open()"><i class="material-icons">share</i></span></li>
+                                <li><span class="box default"><i class="material-icons">print</i></span></li>
+                            </ul>
+                        </div>
+                    </header>
+
+                    <div class="info">
+                        <header>
+                            <hgroup>
+                                <h2>Nome da Empresa</h2>
+                                <h3>Endereço Curto</h3>
+                            </hgroup>
+
+                            <figure class="text-center">
+                                <img src="{{place.logo}}" alt="">
+                            </figure>
+                        </header>
+
+                        <div class="address">
+
+                        </div>
+
+                        <div class="status">
+
+                        </div>
+
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/oficialblyp" target="_blank"><i class="symbol">circlefacebook</i></a></li>
+                            <li><a href="https://www.facebook.com/oficialblyp" target="_blank"><i class="symbol">circletwitterbird</i></a></li>
+                            <li><a href="https://www.facebook.com/oficialblyp" target="_blank"><i class="symbol">circlegoogleplus</i></a></li>
+                            <li><a href="https://www.facebook.com/oficialblyp" target="_blank"><i class="symbol">circleyoutube</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="about">
+                    <header>
+                        <h2><i class="material-icons">info</i> Sobre</h2>
+                    </header>
+
+                    <div class="text">
+                        <p>O BK® do Shopping Curitiba foi o terceiro restaurante da marca a chegar na cidade. Dentro dos seu espaço de 200m2 é oferecida uma infraestrutura que atende, de maneira rigorosa, a todos os requisitos necessários para que o cliente possa usufruir e aproveitar um dos melhores lanches do planeta.</p>
+                        <p>A ideia de trazer o franchising para o Shopping ocorreu a partir da iniciativa dos empreendedores e socios Roberto Galvão Siqueira e Emerson Damásio Shweine, ambos com vasta experiência no mundo dos negócios, principalmente do ramo alimentício.</p>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <header>
+                        <h2><i class="material-icons">shopping_cart</i> Produtos e Serviços</h2>
+                    </header>
+
+                    <ol>
+                        <li class="category">Categoria 1</li>
+                        <li>
+                            <ol>
+                                <li class="product"><em>Produto 1</em> <span>Consultar</span></li>
+                                <li class="product"><em>Produto 2</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 3</em> <span>R$ 12,00</span></li>
+                            </ol>
+                        </li>
+
+                        <li class="category">Categoria 2</li>
+                        <li>
+                            <ol>
+                                <li class="product"><em>Produto 4</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 5</em> <span>R$ 12,00</span></li>
+                                <li class="product"><em>Produto 6</em> <span>R$ 12,00</span></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="comments">
+                    <header>
+                        <h2><i class="material-icons">chat</i> Avaliações e Comentários</h2>
+                    </header>
+
+                    <div class="write">
+                        <p>Olá <b>Leonardo Moreira</b>, faça uma avaliação sobre <b>Nome da Empresa</b>:</p>
+
+                        <form class="text">
+                            <ul>
+                                <li>
+                                    <textarea class="comment default" placeholder="Escreva seu comentário."></textarea>
+                                </li>
+
+                                <li>
+                                    <div class="rating">
+                                        <span class="like"><i class="material-icons">sentiment_satisfied</i> Gostei</span>
+                                        <span class="unlike"><i class="material-icons">sentiment_dissatisfied</i> Não Gostei</span>
+                                    </div>
+
+                                    <button type="submit" class="button gold right">Enviar</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                    <div class="responses">
+                        <div class="response" ng-repeat="i in [1,2]">
+                            <div class="author">
+                                <figure>
+                                    <img class="img-circle" src="https://graph.facebook.com/1636057229/picture?width=64&amp;height=64" alt="leonardomoreira">
+                                </figure>
+
+                                <div class="info">
+                                    <h2>Leonardo Moreira</h2>
+                                    <span>10 de Março de 2016</span>
+                                </div>
+                            </div>
+
+                            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis.</p>
+
+                            <div class="report">
+                                <span>Esta opinião ajudou? <a href="javascript:void(0)">Sim</a> | <a href="javascript:void(0)">Não</a></span>
+                                <span class="box abuse">Reportar Abuso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="delivery">
+                    <header>
+                        <h2><i class="material-icons">motorcycle</i> Entrega em Domicílio</h2>
+                    </header>
+
+                    <ul>
+                        <li class="active"><i class="material-icons">keyboard_arrow_right</i> Segunda-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Terça-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quarta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quinta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sexta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sábado <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Domingo <span>14h às 22h</span></li>
+                    </ul>
+
+                    <span class="nearby">Bairros atendidos: Batel, Cabral, Água Verde, Santa Cândida,Boa Vista, Capão Redondo.</span>
+                </div>
+
+                <div class="coupons">
+                    <header>
+                        <h2><i class="material-icons">local_offer</i> Cupons de Desconto</h2>
+                    </header>
+
+                    <div class="coupon" ng-repeat="i in [1,2,3]">
+                        <div class="info">
+                            <span class="tittle">Ganhe um super desconto com o Cupom {{i}}</span>
+                            <span class="reaming">Cupons restantes: 12</span>
+                        </div>
+
+                        <div class="actions">
+                            <div class="row">
+                                <div class="column">
+                                    <span class="box icon details"><i class="material-icons">info</i> + Detalhes</span>
+                                </div>
+
+                                <div class="column">
+                                    <span class="box icon save"><i class="material-icons">pan_tool</i> Eu Quero!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="videos">
+                    <header>
+                        <h2><i class="material-icons">videocam</i> Vídeos</h2>
+                    </header>
+
+                    <div class="video">
+                        <iframe width="100%" height="380" src="https://www.youtube.com/embed/pwbwg8HUKRA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="tags">
+                    <header>
+                        <h2><i class="material-icons">more</i> Tags</h2>
+                    </header>
+
+                    <div class="list">
+                        <a href="/search?q={{i}}" ng-repeat="i in [1,2,3]">Tag {{i}}</a>
+                    </div>
+                </div>
             </div>
             <!-- /place -->
 
@@ -22,11 +217,20 @@
                     </a>
                 </div>
 
-                <div class="ad-view">
+                <div class="schedule">
                     <header>
                         <h2><i class="material-icons">alarm</i> Funcionamento</h2>
                     </header>
 
+                    <ul>
+                        <li class="active"><i class="material-icons">keyboard_arrow_right</i> Segunda-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Terça-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quarta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Quinta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sexta-feira <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Sábado <span>10h às 22h</span></li>
+                        <li><i class="material-icons">keyboard_arrow_right</i> Domingo <span>14h às 22h</span></li>
+                    </ul>
                 </div>
 
                 <div class="payments-available">
@@ -43,6 +247,17 @@
                         <li><i class="pf pf-visa"></i></li>
                         <li><i class="pf pf-elo"></i></li>
                         <li><i class="pf pf-moip"></i></li>
+                    </ul>
+                </div>
+
+                <div class="downloads">
+                    <header>
+                        <h2><i class="material-icons">cloud_download</i> Arquivos para Download</h2>
+                    </header>
+
+                    <ul>
+                        <li><a href="#"><i class="material-icons">picture_as_pdf</i> Cardápio</a></li>
+                        <li><a href="#"><i class="material-icons">picture_as_pdf</i> Informações sobre Franquia</a></li>
                     </ul>
                 </div>
 
