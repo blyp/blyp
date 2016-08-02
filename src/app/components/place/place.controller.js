@@ -130,6 +130,21 @@ app.controller('place.controller', [
         }
     };
 
+    $scope.directions = {
+
+        open : function() {
+            this.modal();
+        },
+
+        modal : function() {
+            Popeye.openModal({
+                templateUrl: "views/directions/directions.html",
+                controller: "directions.controller",
+                modalClass: "directions-modal"
+            });
+        }
+    };
+
     setTimeout(function(){
         $scope.carousel.picturesOficial();
         $scope.carousel.picturesClients();
