@@ -1,0 +1,87 @@
+<div id="business" class="create finish" page="business">
+
+    <div class="container container-main wrapping">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h1>Criar meu negócio.</h1>
+                    <h2>Digite as informações do seu negócio como deseja que apareça nas buscas do Blyp:</h2>
+                </header>
+            </div>
+            <!-- /header -->
+        </div>
+
+        <form class="default">
+            <div class="form-group">
+                <label for="business_name">Nome</label>
+                <input type="text" class="form-control" id="business_name" name="business[name]" ng-model="business.name">
+            </div>
+
+            <div class="form-group">
+                <label for="business_phone_number">Telefone</label>
+                <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.phone.number" ui-br-phone-number>
+            </div>
+
+            <div class="form-group">
+                <label for="business_website">Website</label>
+                <input type="text" class="form-control" name="business[website]" id="business_website" ng-model="business.website">
+            </div>
+
+            <div class="form-group">
+                <label for="business_address">Endereço</label>
+                <input type="text" class="form-control" id="business_address" name="business[address]" ng-model="business.address">
+            </div>
+
+            <div class="form-group">
+                <label for="business_city">Cidade</label>
+                <input type="text" class="form-control" name="business[city]" id="business_city" ng-model="business.city">
+            </div>
+
+            <div class="form-group">
+                <label for="business_state">Estado</label>
+                <select class="form-control" id="business_state" name="business[state]" ng-model="business.state">
+                    <option value="br" ng-selected="business.state == 'SP'">São Paulo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="business_postal">CEP</label>
+                <input type="text" class="form-control" name="business[postal]" id="business_postal" ng-model="business.postal" ui-br-cep-mask>
+            </div>
+
+            <div class="form-group">
+                <label for="business_country">País</label>
+                <select class="form-control" id="business_country" name="business[country]" ng-model="business.country">
+                    <option value="br" ng-selected="profile.country == 'BR'">Brasil</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="business_identity_taxid">CNPJ</label>
+                <input type="text" class="form-control" name="business[identity][taxid]" id="business_identity_taxid" ng-model="business.identity.taxid" ui-br-cnpj-mask>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="business_notification_owner" name="business[notification][owner]" ng-model="business.notification.owner"> Sou o proprietário ou responsável pelo negócio
+                    <span class="control-indicator"></span>
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" id="business_notification_mobile" name="business[notification][terms]" ng-model="business.notification.terms"> Concordo com os Termos de Negócios do Blyp
+                    <span class="control-indicator"></span>
+                </label>
+            </div>
+
+            <div class="form-group actions">
+                <button type="reset" class="btn btn-reset">Cancelar</button>
+                <button type="submit" class="btn btn-submit">Finalizar</button>
+            </div>
+        </form>
+    </div>
+    <!-- /main -->
+
+</div>
+<!-- /page create new -->

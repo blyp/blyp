@@ -138,6 +138,16 @@ angular.module('core.routes', ['ngRoute']).config([
             }
         })
 
+        .when('/business/create', {
+            templateUrl : 'views/business/create/new.html',
+            controller  : 'business.create.controller'
+        })
+
+        .when('/business/create/finish', {
+            templateUrl : 'views/business/create/finish.html',
+            controller  : 'business.create.controller'
+        })
+
         .when('/contact', {
             templateUrl : 'views/contact/contact.html',
             controller  : 'contact.controller'
