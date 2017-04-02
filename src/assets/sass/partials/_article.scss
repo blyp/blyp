@@ -196,6 +196,101 @@ div#article {
       }
     }
 
+    .recent-authors {
+
+      header.author {
+
+        figure {
+          float: left;
+          width: 36px;
+          height: 36px;
+          margin: 3px 0;
+
+          img {
+            width: 36px;
+            height: 36px;
+          }
+        }
+
+        .info {
+          float: left;
+          margin: 0 15px;
+
+          h2 {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+
+          span {
+            font-size: 11px;
+          }
+        }
+
+        &:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+      }
+
+      header {
+
+        h2 {
+          font-size: $font-h2;
+          font-weight: 700;
+          line-height: 24px;
+          text-transform: uppercase;
+
+          i {
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      ul {
+        margin: 20px 0 40px 35px;
+
+        li {
+          padding: 5px 0;
+
+          header {
+            margin-bottom: 5px;
+
+            h3 {
+              font-size: $font-default;
+              font-weight: 700;
+
+              a:hover {
+                color: $gold;
+              }
+            }
+          }
+
+          p {
+            font-size: $font-small;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+
+        &:after {
+          content: ".";
+          display: block;
+          clear: both;
+          visibility: hidden;
+          line-height: 0;
+          height: 0;
+        }
+      }
+    }
+
     .top-tags {
 
       header {
