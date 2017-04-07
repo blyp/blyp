@@ -140,12 +140,47 @@ angular.module('core.routes', ['ngRoute']).config([
 
         .when('/business/create', {
             templateUrl : 'views/business/create/new.html',
-            controller  : 'business.create.controller'
+            controller  : 'business.create.controller',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/business/create/finish', {
             templateUrl : 'views/business/create/finish.html',
-            controller  : 'business.create.controller'
+            controller  : 'business.create.controller',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard', {
+            templateUrl : 'views/business/list.html',
+            controller  : 'business.list.controller',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'overview',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
         })
 
         .when('/contact', {
