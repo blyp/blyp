@@ -1,0 +1,45 @@
+//Business
+div#business.dashboard {
+
+  .menu {
+
+    header {
+
+      h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 40px;
+
+        @media (max-width: $screen-lg) {
+          font-size: 36px;
+        }
+      }
+    }
+
+    ul.nav {
+
+      li {
+        line-height: 24px;
+
+        a {
+
+          i {
+            vertical-align: bottom;
+            margin-right: 5px;
+          }
+        }
+
+        &.divider {
+          height: 1px;
+          margin: 9px 0;
+          overflow: hidden;
+          background-color: $light-med;
+        }
+
+        &.active > a, &.active > a:focus, &.active > a:hover {
+          background-color: $dark-med;
+        }
+      }
+    }
+  }
+}

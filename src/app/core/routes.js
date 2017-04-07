@@ -183,6 +183,126 @@ angular.module('core.routes', ['ngRoute']).config([
             }
         })
 
+        .when('/business/dashboard/:slug/profile', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'profile',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/about', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'about',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/coupons', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'coupons',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/payments', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'payments',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/opening-hours', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'hours',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/delivery', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'delivery',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/comments', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'comments',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/photos', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'photos',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/videos', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'videos',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
+        .when('/business/dashboard/:slug/files', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'files',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
         .when('/contact', {
             templateUrl : 'views/contact/contact.html',
             controller  : 'contact.controller'
