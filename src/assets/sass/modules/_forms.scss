@@ -143,6 +143,10 @@ form.default {
       -moz-user-select: none;
       -ms-user-select: none;
       user-select: none;
+
+      &:hover, &:focus, &:active {
+        border-color: $light-dark;
+      }
     }
   }
 

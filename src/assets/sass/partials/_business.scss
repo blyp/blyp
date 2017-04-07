@@ -1,0 +1,120 @@
+//Business List
+div#business.list {
+
+  header {
+    margin-bottom: 5px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+
+      @media (max-width: $screen-sm) {
+        font-size: 36px;
+      }
+    }
+
+    h2 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 400;
+
+      @media (max-width: $screen-sm) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+    }
+  }
+
+  .list-business {
+    margin-top: 40px;
+
+    .item {
+      padding: 0 30px;
+      text-align: center;
+
+      figure {
+        margin: 0 0 30px;
+        cursor: pointer;
+        position: relative;
+
+        img {
+          @include border-radius(50%);
+          border: 10px solid $light;
+          width: 220px;
+          height: 220px;
+          margin: 0 auto;
+        }
+
+        figcaption {
+          margin-top: 20px;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .info {
+          display: none;
+          width: 220px;
+          height: 210px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          background: $black;
+          @include border-radius(50%);
+
+          span {
+            vertical-align: middle;
+            text-align: center;
+            width: 220px;
+            height: 220px;
+            display: table-cell;
+            color: $gold;
+            font-size: $font-large;
+            font-weight: 700;
+            padding: 20px;
+          }
+        }
+      }
+
+      &:hover {
+
+        .info {
+          display: table;
+        }
+      }
+
+      .text {
+        margin-bottom: 25px;
+        header {
+
+          h3 {
+            font-size: $font-large;
+            font-weight: 800;
+          }
+
+          h4 {
+            font-size: $font-default;
+            font-weight: 700;
+            font-style: italic;
+            margin-top: 5px;
+            color: $dark;
+          }
+        }
+
+        p {
+          margin-top: 20px;
+          line-height: 21px;
+        }
+      }
+
+      a.button {
+        margin: 0 auto;
+        width: 45%;
+      }
+    }
+
+  }
+
+}

@@ -15,22 +15,32 @@ app.controller('business.create.controller', [
     var base = angular.element("#business");
 
     $scope.business = {
-        name : '',
-        website : '',
-        phone : {
-            number : ''
+
+        field : {
+            name : '',
+            website : '',
+            phone : {
+                number : ''
+            },
+            address : '',
+            city : '',
+            state : 'SP',
+            postal : '',
+            country : 'BR',
+            identity : {
+                taxid : ''
+            },
+            notification : {
+                owner : false,
+                terms : false
+            }
         },
-        address : '',
-        city : '',
-        state : 'SP',
-        postal : '',
-        country : 'BR',
-        identity : {
-            taxid : ''
-        },
-        notification : {
-            owner : false,
-            terms : false
+
+        submit : function() {
+
+            console.log($scope.business.field);
+
+            $location.path('/business/dashboard/1').search('type', null);
         }
     };
 
@@ -46,19 +56,17 @@ app.controller('business.create.controller', [
         }
     };
 
-    $scope.share = {
+    $scope.location = {
 
-        open : function() {
-            this.modal();
-        },
+        go : function(url, n) {
 
-        modal : function() {
-            Popeye.openModal({
-                templateUrl: "views/share/share.html",
-                controller: "share.controller",
-                modalClass: "share-modal"
-            });
+            var fields = {
+                "type": n
+            };
+
+            $location.path(url).search($httpParamSerializer(fields));
         }
     };
+
 }]);
 
