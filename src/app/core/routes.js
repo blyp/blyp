@@ -207,6 +207,18 @@ angular.module('core.routes', ['ngRoute']).config([
             }
         })
 
+        .when('/business/dashboard/:slug/products', {
+            templateUrl : 'views/business/dashboard.html',
+            controller  : 'business.dashboard.controller',
+            alias : 'products',
+            resolve : {
+                factory : function (auth, $location) {
+                    if ( ! auth.check())
+                        auth.open($location.path());
+                }
+            }
+        })
+
         .when('/business/dashboard/:slug/coupons', {
             templateUrl : 'views/business/dashboard.html',
             controller  : 'business.dashboard.controller',

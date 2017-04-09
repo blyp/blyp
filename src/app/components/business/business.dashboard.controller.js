@@ -32,33 +32,53 @@ app.controller('business.dashboard.controller', [
                     $scope.active.title = 'Editar Perfil';
                     break;
 
-                case 'password' :
-                    $scope.active.icon = 'vpn_key';
-                    $scope.active.title = 'Mudar Senha';
+                case 'about' :
+                    $scope.active.icon = 'info';
+                    $scope.active.title = 'Sobre';
+                    break;
+
+                case 'products' :
+                    $scope.active.icon = 'shopping_cart';
+                    $scope.active.title = 'Produtos & Serviços';
                     break;
 
                 case 'coupons' :
                     $scope.active.icon = 'local_offer';
-                    $scope.active.title = 'Cupons';
-                    break;
-
-                case 'bookmarks' :
-                    $scope.active.icon = 'bookmark_border';
-                    $scope.active.title = 'Recomendações';
+                    $scope.active.title = 'Coupons de Desconto';
                     break;
 
                 case 'comments' :
-                    $scope.active.icon = 'comment';
+                    $scope.active.icon = 'chat';
                     $scope.active.title = 'Comentários';
                     break;
 
-                case 'favorites' :
-                    $scope.active.icon = 'favorite';
-                    $scope.active.title = 'Favoritos';
+                case 'opening-hours' :
+                    $scope.active.icon = 'alarm';
+                    $scope.active.title = 'Horários de Funcionamento';
+                    break;
+
+                case 'payments' :
+                    $scope.active.icon = 'monetization_on';
+                    $scope.active.title = 'Formas de Pagamento';
+                    break;
+
+                case 'delivery' :
+                    $scope.active.icon = 'motorcycle';
+                    $scope.active.title = 'Entrega em Domicílio';
+                    break;
+
+                case 'photos' :
+                    $scope.active.icon = 'panorama';
+                    $scope.active.title = 'Fotos';
+                    break;
+
+                case 'videos' :
+                    $scope.active.icon = 'videocam';
+                    $scope.active.title = 'Vídeos';
                     break;
 
                 default :
-                    $scope.active.icon = 'account_circle';
+                    $scope.active.icon = 'business';
                     $scope.active.title = 'Visão Geral';
                     break;
             }
