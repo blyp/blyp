@@ -1,0 +1,55 @@
+<div>
+
+    <header>
+        <h2>Sobre.</h2>
+    </header>
+
+    <div class="about-content">
+
+        <form class="default">
+            <div class="form-group">
+                <label for="business_name">Conte-nos um pouco sobre o seu negócio:</label>
+                <textarea class="form-control" id="business_name" name="business[name]" ng-model="business.field.name"></textarea>
+            </div>
+
+            <header class="subtitle">
+                <h2>Mídias Sociais.</h2>
+            </header>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="symbol">circlefacebook</i></div>
+                    <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.field.phone.number" ui-br-phone-number>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="symbol">circletwitterbird</i></div>
+                    <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.field.phone.number" ui-br-phone-number>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="symbol">circlegoogleplus</i></div>
+                    <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.field.phone.number" ui-br-phone-number>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon"><i class="symbol">circleyoutube</i></div>
+                    <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.field.phone.number" ui-br-phone-number>
+                </div>
+            </div>
+
+            <div class="form-group actions">
+                <button type="button" class="btn btn-reset" ng-click="location.go('/', null)">Cancelar</button>
+                <button type="submit" class="btn btn-submit" ng-click="business.submit()">Salvar</button>
+            </div>
+        </form>
+
+    </div>
+
+</div>

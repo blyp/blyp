@@ -227,20 +227,11 @@ div#account {
 
         figure {
           display: table-cell;
-          width: 130px;
+          width: 84px;
 
           img {
-            width: 110px;
-            height: 110px;
-          }
-
-          @media (max-width: $screen-sm) {
-            width: 100px;
-
-            img {
-              width: 80px;
-              height: 80px;
-            }
+            width: 64px;
+            height: 64px;
           }
         }
 
@@ -309,23 +300,14 @@ div#account {
 
         figure {
           display: table-cell;
-          width: 130px;
+          width: 84px;
 
           .img {
-            width: 110px;
-            height: 110px;
+            width: 64px;
+            height: 64px;
             background-color: $dark;
             background-size: cover;
             background-position: center;
-          }
-
-          @media (max-width: $screen-sm) {
-            width: 100px;
-
-            .img {
-              width: 80px;
-              height: 80px;
-            }
           }
         }
 

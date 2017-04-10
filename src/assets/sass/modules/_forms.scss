@@ -79,6 +79,14 @@ form.default {
       }
     }
 
+    .input-group-addon {
+      border-color: $light-med;
+
+      input, select, textarea {
+        @include border-radius(4px);
+      }
+    }
+
     .help-block {
       font-size: $font-small;
       margin-top: 10px;

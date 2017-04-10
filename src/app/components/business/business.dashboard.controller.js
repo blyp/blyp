@@ -21,6 +21,26 @@ app.controller('business.dashboard.controller', [
         title : null
     };
 
+    $scope.business = {
+
+        field : {
+            name : 'Blyp Tecnologia da Informação LTDA',
+            website : 'www.blyp.com.br',
+            phone : {
+                number : '41 0000-0000'
+            },
+            address : 'Rua dos Ricos, 1000 ',
+            city : 'Curitiba',
+            state : 'PR',
+            postal : '00000000',
+            country : 'BR',
+            identity : {
+                taxid : ''
+            }
+        }
+
+    };
+
     $scope.init = {
 
         pushActive : function(alias) {
@@ -84,6 +104,33 @@ app.controller('business.dashboard.controller', [
             }
         }
     };
+
+    $scope.comments = [
+        {
+            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+            "date" : "16/01/2016",
+            "author" : {
+                "name" : "Leonardo Moreira",
+                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
+            }
+        },
+        {
+            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+            "date" : "16/01/2016",
+            "author" : {
+                "name" : "Leonardo Moreira",
+                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
+            }
+        },
+        {
+            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+            "date" : "16/01/2016",
+            "author" : {
+                "name" : "Leonardo Moreira",
+                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
+            }
+        }
+    ];
 
     $scope.init.pushActive($scope.alias);
 
