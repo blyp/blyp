@@ -135,4 +135,3 @@ app.controller('business.dashboard.controller', [
     $scope.init.pushActive($scope.alias);
 
 }]);
-
