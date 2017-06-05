@@ -332,6 +332,67 @@ div#business.dashboard {
                 }
               }
             }
+            
+            .report {
+                margin-top: 25px;
+                font-size: $font-small;
+                font-weight: 700;
+
+                a {
+
+                    &:hover {
+                        color: $gold;
+                    }
+                }
+
+                .abuse {
+                    float: right;
+                    margin-top: -8px;
+                    padding: 8px 14px;
+                    margin-left: 10px;
+                    background: $light-med;
+                    @include border-radius(4px);
+                }
+                
+                .answer {
+                    float: left;
+                    margin-top: -8px;
+                    padding: 8px 10px 8px 14px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background: $light-med;
+                    @include border-radius(4px);
+                    
+                    i {
+                        font-size: 12px;
+                        vertical-align: top;
+                    }
+                    
+                    &:hover {
+                        background: $gold;
+                    }
+                }
+                
+                &:after {
+                    content: ".";
+                    display: block;
+                    clear: both;
+                    visibility: hidden;
+                    line-height: 0;
+                    height: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            form {
+                margin-top: 20px;
+                display: none;
+                
+                textarea {
+                    height: 80px;
+                    max-height: 80px;
+                }
+            }
 
             &:last-child {
               border: none;
