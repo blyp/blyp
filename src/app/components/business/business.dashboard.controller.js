@@ -131,6 +131,75 @@ app.controller('business.dashboard.controller', [
             }
         }
     ];
+    
+    $scope.social = {
+        
+        data : {
+            icon : null,
+            title : null,
+            field : null,
+            url : null
+        },
+        
+        open : function(item) {
+            
+            if (item === 'facebook') {
+                
+                this.data = {
+                    icon : 'circlefacebook',
+                    title : 'Facebook',
+                    field : 'facebook',
+                    url : 'http://www.facebook.com/blypoficial'
+                };
+            }
+
+            if (item === 'twitter') {
+                
+                this.data = {
+                    icon : 'circletwitterbird',
+                    title : 'Twitter',
+                    field : 'twitter',
+                    url : null
+                };
+            }
+            
+            if (item === 'plus') {
+                
+                this.data = {
+                    icon : 'circlegoogleplus',
+                    title : 'Google Plus',
+                    field : 'googleplus',
+                    url : null
+                };
+            }
+            
+            if (item === 'youtube') {
+                
+                this.data = {
+                    icon : 'circleyoutube',
+                    title : 'YouTube',
+                    field : 'youtube',
+                    url : null
+                };
+            }
+            
+            this.modal();
+        },
+
+        modal : function() {
+            
+            Popeye.openModal({
+                templateUrl: "views/business/partials/_about.social.html",
+                controller: "business.dashboard.social.controller",
+                modalClass: "about-modal",
+                resolve: {
+                    data : function () {
+                      return $scope.social.data;
+                    }
+                  }
+            });
+        }
+    };
 
     $scope.init.pushActive($scope.alias);
 
