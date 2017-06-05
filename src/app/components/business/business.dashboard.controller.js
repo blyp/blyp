@@ -105,32 +105,62 @@ app.controller('business.dashboard.controller', [
         }
     };
 
-    $scope.comments = [
-        {
-            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "date" : "16/01/2016",
-            "author" : {
-                "name" : "Leonardo Moreira",
-                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
+    $scope.comments = {
+        
+        data : [
+            {
+                id : "1",
+                text : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+                date : "16/01/2016",
+                report : "0",
+                points : "+1",
+                rate : "positive",
+                author : {
+                    name : "Leonardo Moreira",
+                    image : "https://graph.facebook.com/1636057229/picture?width=64&height=64"
+                }
+            },
+            {
+                id : "2",
+                text : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+                date : "16/01/2016",
+                report : "0",
+                points : "+5",
+                rate : "negative",
+                author : {
+                    name : "Leonardo Moreira",
+                    image : "https://graph.facebook.com/1636057229/picture?width=64&height=64"
+                }
+            },
+            {
+                id : "3",
+                text : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
+                date : "16/01/2016",
+                report : "1",
+                points : "-2",
+                rate : "positive",
+                author : {
+                    name : "Leonardo Moreira",
+                    image : "https://graph.facebook.com/1636057229/picture?width=64&height=64"
+                }
             }
+        ],
+        
+        send : function(data) {
+            
+            this.close(data);
         },
-        {
-            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "date" : "16/01/2016",
-            "author" : {
-                "name" : "Leonardo Moreira",
-                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
-            }
+        
+        open : function(data) {
+
+            $(".item[data-id='" + data + "'] form").show();
         },
-        {
-            "text" : "Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis.",
-            "date" : "16/01/2016",
-            "author" : {
-                "name" : "Leonardo Moreira",
-                "image" : "https://graph.facebook.com/1636057229/picture?width=64&height=64",
-            }
+        
+        close : function(data) {
+            
+            $(".item[data-id='" + data + "'] form").hide();
         }
-    ];
+    };
     
     $scope.social = {
         
