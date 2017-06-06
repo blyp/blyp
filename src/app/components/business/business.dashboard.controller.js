@@ -231,6 +231,31 @@ app.controller('business.dashboard.controller', [
         }
     };
 
+    $scope.openinghours = {
+      
+        select : function(data) {
+
+            if ($("[name='openinghours["+data+"]']:checkbox:checked").length > 0) {
+                this.disabled(data);
+            } else {
+                this.enabled((data));
+            }
+        },
+        
+        enabled : function(data) {
+            
+            $(".openinghours-content ." + data + " select").removeAttr('disabled');
+            $(".openinghours-content ." + data + " .full-time  input").removeAttr('disabled');
+            $(".openinghours-content ." + data + " .full-time .control-indicator").removeClass('disabled');
+        },
+        
+        disabled : function(data) {
+            
+            $(".openinghours-content ." + data + " select").attr('disabled', 'disabled');
+            $(".openinghours-content ." + data + " .full-time  input").attr('disabled', 'disabled');
+            $(".openinghours-content ." + data + " .full-time .control-indicator").addClass('disabled');
+        }
+    };
     $scope.init.pushActive($scope.alias);
 
 }]);

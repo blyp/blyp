@@ -246,7 +246,7 @@ angular.module('core.routes', ['ngRoute']).config([
         .when('/business/dashboard/:slug/opening-hours', {
             templateUrl : 'views/business/dashboard.html',
             controller  : 'business.dashboard.controller',
-            alias : 'hours',
+            alias : 'opening-hours',
             resolve : {
                 factory : function (auth, $location) {
                     if ( ! auth.check())

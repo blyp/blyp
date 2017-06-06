@@ -168,6 +168,19 @@ div#business.dashboard {
           line-height: 36px;
         }
       }
+      
+      .title {
+        font-size: 14px;
+        font-weight: 700;
+        color: $dark-med;
+        margin-bottom: 30px;
+        display: inline-block;
+
+        @media (max-width: $screen-sm) {
+          font-size: 24px;
+          line-height: 36px;
+        }
+      }
 
       @media (max-width: $screen-md) {
         display: none;
@@ -609,9 +622,96 @@ div#business.dashboard {
         }
       }
     }
+    
+    .openinghours-content {
+               
+        .form-group {
+            margin-bottom: 5px;
+            
+            &.multitag {
+                margin-bottom: 20px;
+            }
+            
+            &.inline {
+                margin-bottom: 5px !important;
+            }
+        }
+
+        .multitag {
+            
+            input {
+                width: 100%;
+            }
+            
+            .label-info {
+                background-color: $gold;
+                color: $black;
+                padding: 10px;
+                font-size: 10px;
+                
+                span {
+                    margin: 0;
+                }
+            }
+        }
+        
+        .inline {
+            height: 54px;
+            padding: 10px;
+            @include border-radius(4px);
+            
+            .left {
+                float: left;
+            }
+            
+            .right {
+                float: right;
+            }
+            
+            &:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        }
+        
+        input, select, textarea {
+            width: 15%;
+        }
+        
+        span {
+            margin: 0 5px;
+            
+            &.between {
+                margin: 0 10px;
+            }
+        }
+        
+        .checkbox {
+            
+            label {
+                vertical-align: baseline;
+                line-height: 34px;
+                padding-left: 2.75em;
+            }
+        }
+        
+        .control-indicator {
+            width: 26px;
+            height: 26px;
+            top: -3px;
+            margin-right: 15px;
+        }
+        
+        .actions {
+            margin-top: 15px;
+        }
+    }
   
     .payments-content {
 
+      .form-group {
+        margin-bottom: 0;
+      }
+      
       .item {
         position: relative;
         background: $light-med;
