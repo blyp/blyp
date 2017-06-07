@@ -1,0 +1,76 @@
+<div>
+
+    <header>
+        <h2>Visão geral.</h2>
+
+        <div class="action">
+            <a class="button gold" href="#">Ver minha página</a>
+        </div>
+    </header>
+
+    <div class="overview-content">
+        <div class="stats">
+            <div class="item col-md-4">
+                <span class="value">2.351</span>
+                <span class="title">Visualizações de página</span>
+            </div>
+
+            <div class="item col-md-4">
+                <span class="value">+65%</span>
+                <span class="title">Novos seguidores</span>
+            </div>
+
+            <div class="item col-md-4">
+                <span class="value">78%</span>
+                <span class="title">Aprovação dos clientes</span>
+            </div>
+        </div>
+
+        <div class="comments">
+            <header class="subtitle">
+                <h2>Últimas avaliações.</h2>
+            </header>
+
+            <ul class="lists">
+                <li class="item" data-id="{{comment.id}}" ng-repeat="comment in comments.data">
+                    <div>
+                        <figure>
+                            <div class="img img-circle" ng-style="{ 'background-image' : 'url({{comment.author.image}})' }"></div>
+                        </figure>
+
+                        <div class="info">
+                            <p>"{{comment.text}}"</p>
+                            <span>Comentado em <b>{{comment.date}}</b> por <b>{{comment.author.name}}</b></span>
+                        </div>
+
+                        <div class="rating">
+                            <i class="material-icons md-48 positive" ng-show="comment.rate=='positive'">sentiment_very_satisfied</i>
+                            <i class="material-icons md-48 negative" ng-show="comment.rate=='negative'">sentiment_dissatisfied</i>
+                        </div>
+                    </div>
+        
+                    <div class="report">
+                        <span ng-show="comment.report > 0">Remover comentário abusivo? <a href="javascript:void(0)">Sim</a> | <a href="javascript:void(0)">Não</a></span>
+                        
+                        <span class="box answer" ng-click="comments.open(comment.id)">Responder <i class="material-icons">redo</i></span>
+                        
+                        <span class="box abuse">Notificações: {{comment.report}}</span>
+                        <span class="box abuse">Reputação: {{comment.points}}</span>
+                    </div>
+                    
+                    <form class="default">
+                        <div class="form-group">
+                            <textarea class="form-control" id="comment_answer" name="comment[about]"></textarea>
+                        </div>
+
+                        <div class="form-group actions">
+                            <button type="button" class="btn btn-reset" ng-click="comments.close(comment.id)">Cancelar</button>
+                            <button type="submit" class="btn btn-submit" ng-click="comments.send(comment.id)">Enviar</button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

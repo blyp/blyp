@@ -53,3 +53,4 @@ node_modules
 test/
 
 
+/nbproject/private/

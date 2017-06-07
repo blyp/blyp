@@ -1,0 +1,19 @@
+<div class="about-social">
+    <header>
+        <h2>Informe seu perfil no {{data.title}} {{data.item}}:</h2>
+    </header>
+
+    <form class="default">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><i class="symbol">{{data.icon}}</i></div>
+                <input type="text" class="form-control" name="business[social][{{data.field}}]" id="business_social_{{data.field}}" ng-model="data.url">
+            </div>
+        </div>
+        
+        <div class="form-group actions">
+            <button type="submit" class="btn btn-submit" ng-click="social.save()">Salvar</button>
+        </div>
+    </form>
+    
+</div>

@@ -1,0 +1,89 @@
+<div>
+
+    <header>
+        <h2>Editar perfil.</h2>
+    </header>
+
+    <form class="default">
+        <div class="form-group">
+            <label for="business_name">Nome</label>
+            <input type="text" class="form-control" id="business_name" name="business[name]" ng-model="business.field.name">
+        </div>
+
+        <div class="form-group">
+            <label for="business_phone_number">Telefone</label>
+            <input type="text" class="form-control" name="business[phone][number]" id="business_phone_number" ng-model="business.field.phone.number" ui-br-phone-number>
+        </div>
+
+        <div class="form-group">
+            <label for="business_website">Website</label>
+            <input type="text" class="form-control" name="business[website]" id="business_website" ng-model="business.field.website">
+        </div>
+
+        <div class="form-group">
+            <label for="business_address">Endereço</label>
+            <input type="text" class="form-control" id="business_address" name="business[address]" ng-model="business.field.address">
+        </div>
+
+        <div class="form-group">
+            <label for="business_city">Cidade</label>
+            <input type="text" class="form-control" name="business[city]" id="business_city" ng-model="business.field.city">
+        </div>
+
+        <div class="form-group">
+            <label for="business_state">Estado</label>
+            <select class="form-control" id="business_state" name="business[state]" ng-model="business.field.state">
+                <option value="AC" ng-selected="business.state == 'AC'">Acre</option>
+                <option value="AL" ng-selected="business.state == 'AL'">Alagoas</option>
+                <option value="AP" ng-selected="business.state == 'AP'">Amapá</option>
+                <option value="AM" ng-selected="business.state == 'AM'">Amazonas</option>
+                <option value="BA" ng-selected="business.state == 'BA'">Bahia</option>
+                <option value="CE" ng-selected="business.state == 'CE'">Ceará</option>
+                <option value="DF" ng-selected="business.state == 'DF'">Distrito Federal</option>
+                <option value="ES" ng-selected="business.state == 'ES'">Espírito Santo</option>
+                <option value="GO" ng-selected="business.state == 'GO'">Goiás</option>
+                <option value="MA" ng-selected="business.state == 'MA'">Maranhão</option>
+                <option value="MT" ng-selected="business.state == 'MT'">Mato Grosso</option>
+                <option value="MS" ng-selected="business.state == 'MS'">Mato Grosso do Sul</option>
+                <option value="MG" ng-selected="business.state == 'MG'">Minas Gerais</option>
+                <option value="PA" ng-selected="business.state == 'PA'">Pará</option>
+                <option value="PB" ng-selected="business.state == 'PB'">Paraíba</option>
+                <option value="PR" ng-selected="business.state == 'PR'">Paraná</option>
+                <option value="PE" ng-selected="business.state == 'PE'">Pernambuco</option>
+                <option value="PI" ng-selected="business.state == 'PI'">Piauí</option>
+                <option value="RJ" ng-selected="business.state == 'RJ'">Rio de Janeiro</option>
+                <option value="RN" ng-selected="business.state == 'RN'">Rio Grande do Norte</option>
+                <option value="RS" ng-selected="business.state == 'RS'">Rio Grande do Sul</option>
+                <option value="RO" ng-selected="business.state == 'RO'">Rondônia</option>
+                <option value="RR" ng-selected="business.state == 'RR'">Roraima</option>
+                <option value="SC" ng-selected="business.state == 'SC'">Santa Catarina</option>
+                <option value="SP" ng-selected="business.state == 'SP'">São Paulo</option>
+                <option value="SE" ng-selected="business.state == 'SE'">Sergipe</option>
+                <option value="TO" ng-selected="business.state == 'TO'">Tocantins</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="business_postal">CEP</label>
+            <input type="text" class="form-control" name="business[postal]" id="business_postal" ng-model="business.field.postal" ui-br-cep-mask>
+        </div>
+
+        <div class="form-group">
+            <label for="business_country">País</label>
+            <select class="form-control" id="business_country" name="business[country]" ng-model="business.field.country">
+                <option value="BR" ng-selected="business.country == 'BR'">Brasil</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="business_identity_taxid">CNPJ</label>
+            <input type="text" class="form-control" name="business[identity][taxid]" id="business_identity_taxid" ng-model="business.field.identity.taxid" ui-br-cnpj-mask>
+        </div>
+
+        <div class="form-group actions">
+            <button type="button" class="btn btn-reset" ng-click="location.go('/', null)">Cancelar</button>
+            <button type="submit" class="btn btn-submit" ng-click="business.submit()">Salvar</button>
+        </div>
+    </form>
+
+</div>

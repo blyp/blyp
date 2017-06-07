@@ -1,0 +1,299 @@
+<div>
+
+    <header>
+        <h2>Entrega em domicílio.</h2>
+    </header>
+
+    <div class="openinghours-content">
+        
+        <form class="default">
+            <div class="form-group multitag">
+                <label>Informe bairros atendidos pelo seu estabelecimento:</label>
+                <input type="text" id="a" name="a" data-role="tagsinput" value="Bacacheri, Cachoeira, Pilarzinho, Taboão" />
+            </div>
+
+            <script>
+                $('#a').tagsinput();
+            </script>
+
+            <div class="form-group">
+                <label>Selecione os dias e horários disponíveis para entrega em domícilio:</label>
+            </div>
+
+            <div class="form-group inline monday">
+                
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_monday" name="openinghours[monday]"> Segunda-feira
+                            <span class="control-indicator" ng-click="openinghours.select('monday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>    
+
+            <div class="form-group inline tuesday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_tuesday" name="openinghours[tuesday]"> Terça-feira
+                            <span class="control-indicator" ng-click="openinghours.select('tuesday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group inline wednesday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_wednesday" name="openinghours[wednesday]"> Quarta-feira
+                            <span class="control-indicator" ng-click="openinghours.select('wednesday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group inline thursday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_thursday" name="openinghours[thursday]"> Quinta-feira
+                            <span class="control-indicator" ng-click="openinghours.select('thursday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group inline friday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_friday" name="openinghours[friday]"> Sexta-feira
+                            <span class="control-indicator" ng-click="openinghours.select('friday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group inline saturday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_saturday" name="openinghours[saturday]"> Sábado
+                            <span class="control-indicator" ng-click="openinghours.select('saturday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group inline sunday">
+                <div class="col-md-4 no-padding">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="openinghours_sunday" name="openinghours[sunday]"> Domingo
+                            <span class="control-indicator" ng-click="openinghours.select('sunday')"></span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 text-right no-padding">
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <span class="between">até</span>
+
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23']" value="{{i}}"> {{i}} </option>
+                    </select>
+                    <span>:</span>
+                    <select class="form-control" id="" name="" disabled>
+                        <option ng-repeat="i in ['00', '15', '30', '45']" value="{{i}}"> {{i}} </option>
+                    </select>
+
+                    <div class="checkbox full-time">
+                        <label>
+                            <input type="checkbox" disabled> 24h
+                            <span class="control-indicator disabled"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group actions">
+                <button type="button" class="btn btn-reset" ng-click="location.go('/', null)">Cancelar</button>
+                <button type="submit" class="btn btn-submit" ng-click="business.submit()">Salvar</button>
+            </div>
+            
+        </form>
+        
+    </div>
+
+</div>
