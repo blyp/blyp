@@ -256,6 +256,68 @@ app.controller('business.dashboard.controller', [
             $(".openinghours-content ." + data + " .full-time .control-indicator").addClass('disabled');
         }
     };
+    
+    $scope.photos = {
+    
+        open : function() {
+            $(".photos-content form").show();
+        },
+        
+        close : function() {
+            $(".photos-content form").hide();
+        }
+    };
+    
+    $scope.downloads = {
+    
+        open : function() {
+            $(".files-content form").show();
+        },
+        
+        close : function() {
+            $(".files-content form").hide();
+        }
+    };
+    
+    $scope.videos = {
+        
+        data : {
+            icon : null,
+            title : null,
+            field : null,
+            url : null
+        },
+        
+        open : function(item) {
+                       
+            if (item === 'youtube') {
+                
+                this.data = {
+                    icon : 'circleyoutube',
+                    title : 'YouTube',
+                    field : 'youtube',
+                    url : null
+                };
+            }
+            
+            this.modal();
+        },
+                
+        modal : function() {
+            
+            Popeye.openModal({
+                templateUrl: "views/business/partials/_videos.upload.html",
+                controller: "business.dashboard.videos.controller",
+                modalClass: "about-modal",
+                resolve: {
+                    data : function () {
+                      return $scope.videos.data;
+                    }
+                  }
+            });
+        }
+    };
+    
     $scope.init.pushActive($scope.alias);
 
 }]);
